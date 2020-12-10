@@ -4,5 +4,5 @@ import * as Models from "./models/index";
 import * as Tipos from "./tipos/index";
 import * as Utils from "./utils/index";
 import * as SharedConfig from "./config";
-
 export { Exceptions, Interfaces, Models, Tipos, Utils, SharedConfig };
+//# sourceMappingURL=index.d.ts.map

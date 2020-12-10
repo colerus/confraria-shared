@@ -1,0 +1,46 @@
+import PropsEndereco from "../../interfaces/models/dados/propsEndereco";
+import TipoEndereco from "../../tipos/tipoEndereco";
+import propsEndereco from "../../interfaces/models/dados/propsEndereco";
+import Id from "../id";
+export default class Endereco extends Id {
+    private tipoLogradouro;
+    private logradouro;
+    private numero?;
+    private complemento?;
+    private codigoPostal?;
+    private cidade;
+    private estado;
+    private pais;
+    private referencia?;
+    private tipoEndereco;
+    constructor(dados: PropsEndereco, tipoEndereco: TipoEndereco);
+    alterarId(id?: string): void;
+    alterarTipoLogradouro(tipoLogradouro: string): void;
+    alterarLogradouro(logradouro: string): void;
+    alterarNumero(numero?: number): void;
+    alterarComplemento(complemento?: string): void;
+    alterarCodigoPostal(codigoPostal: string): void;
+    alterarCidade(cidade: string): void;
+    alterarEstado(estado: string): void;
+    alterarPais(pais: string): void;
+    alterarReferencia(referencia?: string): void;
+    alterarTipoEndereco(tipoEndereco: TipoEndereco): void;
+    obterId(): any;
+    obterTipoLogradouro(): string;
+    obterLogradouro(): string;
+    obterNumero(): number | undefined;
+    obterComplemento(): string | undefined;
+    obterCodigoPostal(): string | undefined;
+    obterCidade(): string;
+    obterEstado(): string;
+    obterPais(): string;
+    obterReferencia(): string | undefined;
+    obterTipoEndereco(): TipoEndereco;
+    static validar(endereco: Endereco | propsEndereco): boolean;
+    isValido(): boolean;
+    isLogradouroValido(): boolean;
+    isCidadeValida(): boolean;
+    isEstadoValido(): boolean;
+    isPaisValido(): boolean;
+}
+//# sourceMappingURL=endereco.d.ts.map

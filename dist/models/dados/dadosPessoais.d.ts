@@ -1,0 +1,47 @@
+import Endereco from "./endereco";
+import Telefone from "./telefone";
+import Email from "./email";
+import PropsDadosPessoais from "../../interfaces/models/dados/propsDadosPessoais";
+import propsDadosPessoais from "../../interfaces/models/dados/propsDadosPessoais";
+import PropsEndereco from "../../interfaces/models/dados/propsEndereco";
+import TipoEndereco from "../../tipos/tipoEndereco";
+import PropsTelefone from "../../interfaces/models/dados/propsTelefone";
+import PropsEmail from "../../interfaces/models/dados/propsEmail";
+import PhoneNumber from "awesome-phonenumber";
+import Id from "../id";
+export default class DadosPessoais extends Id {
+    private nome;
+    private sobrenome;
+    private dataNascimento;
+    private enderecos;
+    private telefones;
+    private emails?;
+    constructor(dados: PropsDadosPessoais);
+    alterarId(id?: string): void;
+    alterarNome(nome: string): void;
+    alterarSobrenome(sobrenome: string): void;
+    alterarDataNascimento(dataNascimento: Date): void;
+    adicionarEndereco(endereco: Endereco | PropsEndereco, tipoEndereco?: TipoEndereco): void;
+    adicionarTelefone(telefone: Telefone | PropsTelefone | string | PhoneNumber): void;
+    adicionarEmail(email: string | Email | PropsEmail): void;
+    removerEndereco(endereco: Endereco): void;
+    removerTelefone(telefone: Telefone): void;
+    removerEmail(email: Email): void;
+    obterId(): any;
+    obterNome(): string;
+    obterSobrenome(): string;
+    obterDataNascimento(): Date;
+    obterEnderecos(): Endereco[];
+    obterTelefones(): Telefone[];
+    obterEmails(): Email[] | undefined;
+    static validar(dadosPessoais: DadosPessoais | propsDadosPessoais): boolean;
+    isValido(): boolean;
+    isNomeValido(): boolean;
+    isSobrenomeValido(): boolean;
+    isNomeCompletoValido(): boolean;
+    isDataNascimentoValida(): boolean;
+    isEmailsValidos(): boolean;
+    isEnderecosValidos(): boolean;
+    isTelefonesValidos(): boolean;
+}
+//# sourceMappingURL=dadosPessoais.d.ts.map

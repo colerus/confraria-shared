@@ -1,162 +1,162 @@
 {
   "program": {
     "fileInfos": {
-      "../../../users/iurin/.vscode/extensions/basarat.god-0.0.99/node_modules/typescript/lib/lib.es6.d.ts": {
+      "../../../users/iurin/appdata/roaming/npm/node_modules/typescript/lib/lib.es6.d.ts": {
         "version": "721cec59c3fef87aaf480047d821fb758b3ec9482c4129a54631e6e25e432a31",
         "signature": "721cec59c3fef87aaf480047d821fb758b3ec9482c4129a54631e6e25e432a31",
         "affectsGlobalScope": false
       },
-      "../../../users/iurin/.vscode/extensions/basarat.god-0.0.99/node_modules/typescript/lib/lib.es5.d.ts": {
-        "version": "c9a1f03d6ba0fe3c871eb0dd81622e78fbb61ade70878b34d48a341a690c59e9",
-        "signature": "c9a1f03d6ba0fe3c871eb0dd81622e78fbb61ade70878b34d48a341a690c59e9",
+      "../../../users/iurin/appdata/roaming/npm/node_modules/typescript/lib/lib.es5.d.ts": {
+        "version": "70ae6416528e68c2ee7b62892200d2ca631759943d4429f8b779b947ff1e124d",
+        "signature": "70ae6416528e68c2ee7b62892200d2ca631759943d4429f8b779b947ff1e124d",
         "affectsGlobalScope": true
       },
-      "../../../users/iurin/.vscode/extensions/basarat.god-0.0.99/node_modules/typescript/lib/lib.es2015.d.ts": {
+      "../../../users/iurin/appdata/roaming/npm/node_modules/typescript/lib/lib.es2015.d.ts": {
         "version": "dc47c4fa66b9b9890cf076304de2a9c5201e94b740cffdf09f87296d877d71f6",
         "signature": "dc47c4fa66b9b9890cf076304de2a9c5201e94b740cffdf09f87296d877d71f6",
         "affectsGlobalScope": false
       },
-      "../../../users/iurin/.vscode/extensions/basarat.god-0.0.99/node_modules/typescript/lib/lib.es2016.d.ts": {
+      "../../../users/iurin/appdata/roaming/npm/node_modules/typescript/lib/lib.es2016.d.ts": {
         "version": "7a387c58583dfca701b6c85e0adaf43fb17d590fb16d5b2dc0a2fbd89f35c467",
         "signature": "7a387c58583dfca701b6c85e0adaf43fb17d590fb16d5b2dc0a2fbd89f35c467",
         "affectsGlobalScope": false
       },
-      "../../../users/iurin/.vscode/extensions/basarat.god-0.0.99/node_modules/typescript/lib/lib.es2017.d.ts": {
+      "../../../users/iurin/appdata/roaming/npm/node_modules/typescript/lib/lib.es2017.d.ts": {
         "version": "8a12173c586e95f4433e0c6dc446bc88346be73ffe9ca6eec7aa63c8f3dca7f9",
         "signature": "8a12173c586e95f4433e0c6dc446bc88346be73ffe9ca6eec7aa63c8f3dca7f9",
         "affectsGlobalScope": false
       },
-      "../../../users/iurin/.vscode/extensions/basarat.god-0.0.99/node_modules/typescript/lib/lib.es2018.d.ts": {
+      "../../../users/iurin/appdata/roaming/npm/node_modules/typescript/lib/lib.es2018.d.ts": {
         "version": "5f4e733ced4e129482ae2186aae29fde948ab7182844c3a5a51dd346182c7b06",
         "signature": "5f4e733ced4e129482ae2186aae29fde948ab7182844c3a5a51dd346182c7b06",
         "affectsGlobalScope": false
       },
-      "../../../users/iurin/.vscode/extensions/basarat.god-0.0.99/node_modules/typescript/lib/lib.dom.d.ts": {
-        "version": "38130cdd16bd2318b9362f9d60dd9670f7e38708bb6131cf11fc78a41b2c34a0",
-        "signature": "38130cdd16bd2318b9362f9d60dd9670f7e38708bb6131cf11fc78a41b2c34a0",
+      "../../../users/iurin/appdata/roaming/npm/node_modules/typescript/lib/lib.dom.d.ts": {
+        "version": "9affb0a2ddc57df5b8174c0af96c288d697a262e5bc9ca1f544c999dc64a91e6",
+        "signature": "9affb0a2ddc57df5b8174c0af96c288d697a262e5bc9ca1f544c999dc64a91e6",
         "affectsGlobalScope": true
       },
-      "../../../users/iurin/.vscode/extensions/basarat.god-0.0.99/node_modules/typescript/lib/lib.dom.iterable.d.ts": {
+      "../../../users/iurin/appdata/roaming/npm/node_modules/typescript/lib/lib.dom.iterable.d.ts": {
         "version": "fb0c09b697dc42afa84d1587e3c994a2f554d2a45635e4f0618768d16a86b69a",
         "signature": "fb0c09b697dc42afa84d1587e3c994a2f554d2a45635e4f0618768d16a86b69a",
         "affectsGlobalScope": true
       },
-      "../../../users/iurin/.vscode/extensions/basarat.god-0.0.99/node_modules/typescript/lib/lib.webworker.importscripts.d.ts": {
+      "../../../users/iurin/appdata/roaming/npm/node_modules/typescript/lib/lib.webworker.importscripts.d.ts": {
         "version": "7fac8cb5fc820bc2a59ae11ef1c5b38d3832c6d0dfaec5acdb5569137d09a481",
         "signature": "7fac8cb5fc820bc2a59ae11ef1c5b38d3832c6d0dfaec5acdb5569137d09a481",
         "affectsGlobalScope": true
       },
-      "../../../users/iurin/.vscode/extensions/basarat.god-0.0.99/node_modules/typescript/lib/lib.scripthost.d.ts": {
+      "../../../users/iurin/appdata/roaming/npm/node_modules/typescript/lib/lib.scripthost.d.ts": {
         "version": "097a57355ded99c68e6df1b738990448e0bf170e606707df5a7c0481ff2427cd",
         "signature": "097a57355ded99c68e6df1b738990448e0bf170e606707df5a7c0481ff2427cd",
         "affectsGlobalScope": true
       },
-      "../../../users/iurin/.vscode/extensions/basarat.god-0.0.99/node_modules/typescript/lib/lib.es2015.core.d.ts": {
-        "version": "46ee15e9fefa913333b61eaf6b18885900b139867d89832a515059b62cf16a17",
-        "signature": "46ee15e9fefa913333b61eaf6b18885900b139867d89832a515059b62cf16a17",
+      "../../../users/iurin/appdata/roaming/npm/node_modules/typescript/lib/lib.es2015.core.d.ts": {
+        "version": "63e0cc12d0f77394094bd19e84464f9840af0071e5b9358ced30511efef1d8d2",
+        "signature": "63e0cc12d0f77394094bd19e84464f9840af0071e5b9358ced30511efef1d8d2",
         "affectsGlobalScope": true
       },
-      "../../../users/iurin/.vscode/extensions/basarat.god-0.0.99/node_modules/typescript/lib/lib.es2015.collection.d.ts": {
+      "../../../users/iurin/appdata/roaming/npm/node_modules/typescript/lib/lib.es2015.collection.d.ts": {
         "version": "43fb1d932e4966a39a41b464a12a81899d9ae5f2c829063f5571b6b87e6d2f9c",
         "signature": "43fb1d932e4966a39a41b464a12a81899d9ae5f2c829063f5571b6b87e6d2f9c",
         "affectsGlobalScope": true
       },
-      "../../../users/iurin/.vscode/extensions/basarat.god-0.0.99/node_modules/typescript/lib/lib.es2015.generator.d.ts": {
+      "../../../users/iurin/appdata/roaming/npm/node_modules/typescript/lib/lib.es2015.generator.d.ts": {
         "version": "cdccba9a388c2ee3fd6ad4018c640a471a6c060e96f1232062223063b0a5ac6a",
         "signature": "cdccba9a388c2ee3fd6ad4018c640a471a6c060e96f1232062223063b0a5ac6a",
         "affectsGlobalScope": true
       },
-      "../../../users/iurin/.vscode/extensions/basarat.god-0.0.99/node_modules/typescript/lib/lib.es2015.iterable.d.ts": {
+      "../../../users/iurin/appdata/roaming/npm/node_modules/typescript/lib/lib.es2015.iterable.d.ts": {
         "version": "42f5e41e5893da663dbf0394268f54f1da4b43dc0ddd2ea4bf471fe5361d6faf",
         "signature": "42f5e41e5893da663dbf0394268f54f1da4b43dc0ddd2ea4bf471fe5361d6faf",
         "affectsGlobalScope": true
       },
-      "../../../users/iurin/.vscode/extensions/basarat.god-0.0.99/node_modules/typescript/lib/lib.es2015.promise.d.ts": {
+      "../../../users/iurin/appdata/roaming/npm/node_modules/typescript/lib/lib.es2015.promise.d.ts": {
         "version": "0b7a905675e6cb4211c128f0a3aa47d414b275180a299a9aad5d3ec298abbfc4",
         "signature": "0b7a905675e6cb4211c128f0a3aa47d414b275180a299a9aad5d3ec298abbfc4",
         "affectsGlobalScope": true
       },
-      "../../../users/iurin/.vscode/extensions/basarat.god-0.0.99/node_modules/typescript/lib/lib.es2015.proxy.d.ts": {
+      "../../../users/iurin/appdata/roaming/npm/node_modules/typescript/lib/lib.es2015.proxy.d.ts": {
         "version": "dfff68b3c34338f6b307a25d4566de15eed7973b0dc5d69f9fde2bcac1c25315",
         "signature": "dfff68b3c34338f6b307a25d4566de15eed7973b0dc5d69f9fde2bcac1c25315",
         "affectsGlobalScope": true
       },
-      "../../../users/iurin/.vscode/extensions/basarat.god-0.0.99/node_modules/typescript/lib/lib.es2015.reflect.d.ts": {
+      "../../../users/iurin/appdata/roaming/npm/node_modules/typescript/lib/lib.es2015.reflect.d.ts": {
         "version": "cb609802a8698aa28b9c56331d4b53f590ca3c1c3a255350304ae3d06017779d",
         "signature": "cb609802a8698aa28b9c56331d4b53f590ca3c1c3a255350304ae3d06017779d",
         "affectsGlobalScope": true
       },
-      "../../../users/iurin/.vscode/extensions/basarat.god-0.0.99/node_modules/typescript/lib/lib.es2015.symbol.d.ts": {
+      "../../../users/iurin/appdata/roaming/npm/node_modules/typescript/lib/lib.es2015.symbol.d.ts": {
         "version": "3013574108c36fd3aaca79764002b3717da09725a36a6fc02eac386593110f93",
         "signature": "3013574108c36fd3aaca79764002b3717da09725a36a6fc02eac386593110f93",
         "affectsGlobalScope": true
       },
-      "../../../users/iurin/.vscode/extensions/basarat.god-0.0.99/node_modules/typescript/lib/lib.es2015.symbol.wellknown.d.ts": {
+      "../../../users/iurin/appdata/roaming/npm/node_modules/typescript/lib/lib.es2015.symbol.wellknown.d.ts": {
         "version": "4670208dd7da9d6c774ab1b75c1527a810388c7989c4905de6aaea8561cb9dce",
         "signature": "4670208dd7da9d6c774ab1b75c1527a810388c7989c4905de6aaea8561cb9dce",
         "affectsGlobalScope": true
       },
-      "../../../users/iurin/.vscode/extensions/basarat.god-0.0.99/node_modules/typescript/lib/lib.es2016.array.include.d.ts": {
+      "../../../users/iurin/appdata/roaming/npm/node_modules/typescript/lib/lib.es2016.array.include.d.ts": {
         "version": "3be5a1453daa63e031d266bf342f3943603873d890ab8b9ada95e22389389006",
         "signature": "3be5a1453daa63e031d266bf342f3943603873d890ab8b9ada95e22389389006",
         "affectsGlobalScope": true
       },
-      "../../../users/iurin/.vscode/extensions/basarat.god-0.0.99/node_modules/typescript/lib/lib.es2017.object.d.ts": {
+      "../../../users/iurin/appdata/roaming/npm/node_modules/typescript/lib/lib.es2017.object.d.ts": {
         "version": "17bb1fc99591b00515502d264fa55dc8370c45c5298f4a5c2083557dccba5a2a",
         "signature": "17bb1fc99591b00515502d264fa55dc8370c45c5298f4a5c2083557dccba5a2a",
         "affectsGlobalScope": true
       },
-      "../../../users/iurin/.vscode/extensions/basarat.god-0.0.99/node_modules/typescript/lib/lib.es2017.sharedmemory.d.ts": {
-        "version": "b5e4c2d67aa844ed503b29cd4ca2ede1a229ac7fe874613b2c996fa9c581a25f",
-        "signature": "b5e4c2d67aa844ed503b29cd4ca2ede1a229ac7fe874613b2c996fa9c581a25f",
+      "../../../users/iurin/appdata/roaming/npm/node_modules/typescript/lib/lib.es2017.sharedmemory.d.ts": {
+        "version": "d0db416bccdb33975548baf09a42ee8c47eace1aac7907351a000f1e568e7232",
+        "signature": "d0db416bccdb33975548baf09a42ee8c47eace1aac7907351a000f1e568e7232",
         "affectsGlobalScope": true
       },
-      "../../../users/iurin/.vscode/extensions/basarat.god-0.0.99/node_modules/typescript/lib/lib.es2017.string.d.ts": {
+      "../../../users/iurin/appdata/roaming/npm/node_modules/typescript/lib/lib.es2017.string.d.ts": {
         "version": "6a6b173e739a6a99629a8594bfb294cc7329bfb7b227f12e1f7c11bc163b8577",
         "signature": "6a6b173e739a6a99629a8594bfb294cc7329bfb7b227f12e1f7c11bc163b8577",
         "affectsGlobalScope": true
       },
-      "../../../users/iurin/.vscode/extensions/basarat.god-0.0.99/node_modules/typescript/lib/lib.es2017.intl.d.ts": {
+      "../../../users/iurin/appdata/roaming/npm/node_modules/typescript/lib/lib.es2017.intl.d.ts": {
         "version": "12a310447c5d23c7d0d5ca2af606e3bd08afda69100166730ab92c62999ebb9d",
         "signature": "12a310447c5d23c7d0d5ca2af606e3bd08afda69100166730ab92c62999ebb9d",
         "affectsGlobalScope": true
       },
-      "../../../users/iurin/.vscode/extensions/basarat.god-0.0.99/node_modules/typescript/lib/lib.es2017.typedarrays.d.ts": {
+      "../../../users/iurin/appdata/roaming/npm/node_modules/typescript/lib/lib.es2017.typedarrays.d.ts": {
         "version": "b0124885ef82641903d232172577f2ceb5d3e60aed4da1153bab4221e1f6dd4e",
         "signature": "b0124885ef82641903d232172577f2ceb5d3e60aed4da1153bab4221e1f6dd4e",
         "affectsGlobalScope": true
       },
-      "../../../users/iurin/.vscode/extensions/basarat.god-0.0.99/node_modules/typescript/lib/lib.es2018.asyncgenerator.d.ts": {
+      "../../../users/iurin/appdata/roaming/npm/node_modules/typescript/lib/lib.es2018.asyncgenerator.d.ts": {
         "version": "0eb85d6c590b0d577919a79e0084fa1744c1beba6fd0d4e951432fa1ede5510a",
         "signature": "0eb85d6c590b0d577919a79e0084fa1744c1beba6fd0d4e951432fa1ede5510a",
         "affectsGlobalScope": true
       },
-      "../../../users/iurin/.vscode/extensions/basarat.god-0.0.99/node_modules/typescript/lib/lib.es2018.asynciterable.d.ts": {
+      "../../../users/iurin/appdata/roaming/npm/node_modules/typescript/lib/lib.es2018.asynciterable.d.ts": {
         "version": "a40c4d82bf13fcded295ac29f354eb7d40249613c15e07b53f2fc75e45e16359",
         "signature": "a40c4d82bf13fcded295ac29f354eb7d40249613c15e07b53f2fc75e45e16359",
         "affectsGlobalScope": true
       },
-      "../../../users/iurin/.vscode/extensions/basarat.god-0.0.99/node_modules/typescript/lib/lib.es2018.intl.d.ts": {
+      "../../../users/iurin/appdata/roaming/npm/node_modules/typescript/lib/lib.es2018.intl.d.ts": {
         "version": "df9c8a72ca8b0ed62f5470b41208a0587f0f73f0a7db28e5a1272cf92537518e",
         "signature": "df9c8a72ca8b0ed62f5470b41208a0587f0f73f0a7db28e5a1272cf92537518e",
         "affectsGlobalScope": true
       },
-      "../../../users/iurin/.vscode/extensions/basarat.god-0.0.99/node_modules/typescript/lib/lib.es2018.promise.d.ts": {
+      "../../../users/iurin/appdata/roaming/npm/node_modules/typescript/lib/lib.es2018.promise.d.ts": {
         "version": "bb2d3fb05a1d2ffbca947cc7cbc95d23e1d053d6595391bd325deb265a18d36c",
         "signature": "bb2d3fb05a1d2ffbca947cc7cbc95d23e1d053d6595391bd325deb265a18d36c",
         "affectsGlobalScope": true
       },
-      "../../../users/iurin/.vscode/extensions/basarat.god-0.0.99/node_modules/typescript/lib/lib.es2018.regexp.d.ts": {
+      "../../../users/iurin/appdata/roaming/npm/node_modules/typescript/lib/lib.es2018.regexp.d.ts": {
         "version": "c80df75850fea5caa2afe43b9949338ce4e2de086f91713e9af1a06f973872b8",
         "signature": "c80df75850fea5caa2afe43b9949338ce4e2de086f91713e9af1a06f973872b8",
         "affectsGlobalScope": true
       },
-      "../../../users/iurin/.vscode/extensions/basarat.god-0.0.99/node_modules/typescript/lib/lib.es2020.bigint.d.ts": {
-        "version": "7b5a10e3c897fabece5a51aa85b4111727d7adb53c2734b5d37230ff96802a09",
-        "signature": "7b5a10e3c897fabece5a51aa85b4111727d7adb53c2734b5d37230ff96802a09",
+      "../../../users/iurin/appdata/roaming/npm/node_modules/typescript/lib/lib.es2020.bigint.d.ts": {
+        "version": "4f435f794b7853c55e2ae7cff6206025802aa79232d2867544178f2ca8ff5eaa",
+        "signature": "4f435f794b7853c55e2ae7cff6206025802aa79232d2867544178f2ca8ff5eaa",
         "affectsGlobalScope": true
       },
-      "../../../users/iurin/.vscode/extensions/basarat.god-0.0.99/node_modules/typescript/lib/lib.esnext.intl.d.ts": {
+      "../../../users/iurin/appdata/roaming/npm/node_modules/typescript/lib/lib.esnext.intl.d.ts": {
         "version": "89bf2b7a601b73ea4311eda9c41f86a58994fec1bee3b87c4a14d68d9adcdcbd",
         "signature": "89bf2b7a601b73ea4311eda9c41f86a58994fec1bee3b87c4a14d68d9adcdcbd",
         "affectsGlobalScope": true
@@ -169,11 +169,6 @@
       "./src/config.ts": {
         "version": "a96264342a274fce24c7eb1a5d14353f5950562d1db5996cb84b7266ff1c4259",
         "signature": "fea44757884897b3225ef5b0963efacce03b6ba2f187b8b3adc2bb9fb2cb79eb",
-        "affectsGlobalScope": false
-      },
-      "./src/index.ts": {
-        "version": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-        "signature": "3835f8d92ad0699690cf572ad0da8aa3bfa5cc1c66fbd2609c52a02b9da828dc",
         "affectsGlobalScope": false
       },
       "./src/exceptions/chaterror.ts": {
@@ -214,6 +209,11 @@
       "./src/exceptions/termobuscaerror.ts": {
         "version": "c8c5f76d5b70855f9e901f8c4d39931e735b62899bdb0c26b304a0cef986c011",
         "signature": "e5adf00bb17b334335e1dd5d5d525d8bdb69962e2b4407dac42db67a50788f2a",
+        "affectsGlobalScope": false
+      },
+      "./src/exceptions/index.ts": {
+        "version": "596bf6800a98be4b7329e5a73c9d4afd0b7fdfe4c91f568e6fae9aeed9fa3588",
+        "signature": "193bd1ebf3289c858896edf7997dbb4a243e09f08b1df105f44256b241550474",
         "affectsGlobalScope": false
       },
       "./src/tipos/tipoperfil.ts": {
@@ -491,9 +491,24 @@
         "signature": "5bfd1506d35f30e10dd807c3015a5e2c1c3d2682f08662864f64e4b71f44cf70",
         "affectsGlobalScope": false
       },
+      "./src/interfaces/controllers/index.ts": {
+        "version": "12c7d5b82335ca0f0bccb0ed9106a68df6ab6b09545de756c2a5dcd3e4a2b7be",
+        "signature": "e59fa9a949af6f6abc258720b7dbce34385bcf551fcb735e6d1c025be9d1c80a",
+        "affectsGlobalScope": false
+      },
       "./src/interfaces/models/busca/propspingbusca.ts": {
         "version": "f75c1dd2be6dd4f6f6bd518267e6027e818f887dc03a0edaad43979af0641a42",
         "signature": "a74c48a7781d47a9baafa775e81d30268ad51fb37cc9de87f7154fc28a8762c0",
+        "affectsGlobalScope": false
+      },
+      "./src/interfaces/models/busca/index.ts": {
+        "version": "1c1d13d8ead55d565b087d55c2c21fc5a3ba93cf8ae08987c1fcb8185c676c80",
+        "signature": "ed12b7eb656906e9a7eb27ec03961604671de4381a9387d53bcc565cba94bab7",
+        "affectsGlobalScope": false
+      },
+      "./src/interfaces/models/chat/index.ts": {
+        "version": "89d3ca5ad79341d5eecbdd45f0c16cab45a02c1800508eb6a8f5612ff8c90c22",
+        "signature": "dc9cfd14066840db333c2ecc7adfbac90cdd22bbee4f95a6f967bc0356fdf125",
         "affectsGlobalScope": false
       },
       "./src/interfaces/models/dados/propsservico.ts": {
@@ -519,6 +534,11 @@
       "./src/interfaces/models/dados/propsperfilprestador.ts": {
         "version": "debc5ffb1cc65dcc9737e8e77425ef2575fe79e9493304d4ada04ffeef760821",
         "signature": "5c7259b5e009392aaa143e99476c9e1df708d9db8754c670bcaea45efd59b8eb",
+        "affectsGlobalScope": false
+      },
+      "./src/interfaces/models/dados/index.ts": {
+        "version": "60b92b83104311ad4e198062df1f784c90a81a3670facbe610fdc4155dd171b6",
+        "signature": "c6f4d03aadc3163df378ccf38e27287cb697a015856c1ae8b970e956dc8cb358",
         "affectsGlobalScope": false
       },
       "./src/tipos/tipodadoestatistico.ts": {
@@ -551,9 +571,29 @@
         "signature": "9bb384cee2e6c6b1b19bc600f6eb51b31c82835206d4d21e6e5ec5d0a8d5de0e",
         "affectsGlobalScope": false
       },
+      "./src/interfaces/models/estatisticas/index.ts": {
+        "version": "2a438edd8bff40f8a9c543537b259b2c5fa59b65d07f6359abe47cce3c1faae2",
+        "signature": "625c8a4feb1921df19ef4546cfa2867e6d9168167b415100045117ab22115e03",
+        "affectsGlobalScope": false
+      },
       "./src/interfaces/models/midia/propsvideo.ts": {
         "version": "b40e89d97de7f6880b1d6239d75f90e37d3cb123f9511db182b13210f015f64d",
         "signature": "fca00014c1687d8e513a40c15f55f83d76ae068aebc3585444eb5962475d45cd",
+        "affectsGlobalScope": false
+      },
+      "./src/interfaces/models/midia/index.ts": {
+        "version": "18914f3aa70cfa2168aa5c032582682a83193d23734a29bc9df568a5e4f5d867",
+        "signature": "f5f47dd800ef1ac79449e440c92f7cdade60c9308d86c7cfe128d805b255011f",
+        "affectsGlobalScope": false
+      },
+      "./src/interfaces/models/index.ts": {
+        "version": "ebab1f001bb414b38dc8d1ab5dd05eec8824aee52233563dddc70e7e8d0f9089",
+        "signature": "dac3341881c829addd935086656fb52edcf007726ce55f17772623b7bb1491a8",
+        "affectsGlobalScope": false
+      },
+      "./src/interfaces/index.ts": {
+        "version": "d1dde6424699e609a533730b38404392591e3dbd094d8ffcb376490dd7436b19",
+        "signature": "8cb4e0ad7de9ed86f63dc533213fd811c8fed9470e6d408556da24c39d75e7dc",
         "affectsGlobalScope": false
       },
       "./src/models/busca/pingbusca.ts": {
@@ -561,9 +601,24 @@
         "signature": "7be5427dc61035ee12cfffd0b0b68514b5bed4d739b7605af2acbf5758c2ac7f",
         "affectsGlobalScope": false
       },
+      "./src/models/busca/index.ts": {
+        "version": "03043b4a4fad3710b5c2fbc6f3e1c098a6f1d29e40c474693962e7488b93e0db",
+        "signature": "de4639e34d7c1c6dd776d89e6140903962fe157d5b369bf203acc2f5274e3800",
+        "affectsGlobalScope": false
+      },
+      "./src/models/chat/index.ts": {
+        "version": "152a9a62b60771555c054e97bf1d1b1d4b9263f6cdb5de001284f8fae1c68e3c",
+        "signature": "44ae51c826a79385f2a30b6536e2d7cc0768830d9ba748b6ea9fb9498cf4c3e8",
+        "affectsGlobalScope": false
+      },
       "./src/models/dados/perfilprestador.ts": {
         "version": "2eb0fe02464a8ef1f7aaf4e2398e9c4ee9f98315b6925a795b14425673dadabf",
         "signature": "6d4a0fdb45e297c96101357c248c17d43a79f7efd4cfd012dcb5b7ef799eff49",
+        "affectsGlobalScope": false
+      },
+      "./src/models/dados/index.ts": {
+        "version": "db5e9d2cb1be0bb86951e05bdc275ef64e0d33de964254659532ed6e97b39543",
+        "signature": "cc2e12548b13c2d1dbf7890d357c622de75b2fd4d89755c31d2222085b6418b3",
         "affectsGlobalScope": false
       },
       "./src/models/estatisticas/dadosestatisticos.ts": {
@@ -591,9 +646,39 @@
         "signature": "5e9b095dcb973cdb5a9761eb3cd3f0c3d982ea1ac661e1eb9326ac497b4f5f01",
         "affectsGlobalScope": false
       },
+      "./src/models/estatisticas/index.ts": {
+        "version": "edbbfa67fb8f4a9167ff3afa4ece4bab808f6b34c1f566a961c03e42269bcb8b",
+        "signature": "453506f4b27ae84ffd0afa843b313ab8d2e59033ce74db9f74795a19dc411c7b",
+        "affectsGlobalScope": false
+      },
       "./src/models/midia/video.ts": {
         "version": "220116a6fae884feb8219ab39d4b58b58f5c606b1c1a457af12dfadb9439ff6b",
         "signature": "b613a7cb343c6b86ca299b60e5cf66e4080bcbf7c0a6996d8b3a8143db56d9db",
+        "affectsGlobalScope": false
+      },
+      "./src/models/midia/index.ts": {
+        "version": "e394ce03ee1330f000e59f79b69af144792411eea31956835e17327aae739e53",
+        "signature": "115f27f9ea64708aa66fa8899968e7f162370784c5ecce5af7d54b900e26fd8a",
+        "affectsGlobalScope": false
+      },
+      "./src/models/index.ts": {
+        "version": "e9055d1d5f736d44845ce772c6ed11332aeeb0d7c7e06834391770f7e37a3374",
+        "signature": "f63516cc88e68d6156a7fc9b4f695d577d67f9b0a16c55e00885fbbc24b5c0f2",
+        "affectsGlobalScope": false
+      },
+      "./src/tipos/index.ts": {
+        "version": "63335c053231e17c82f3fb4b28a5722ca05c9c1fe6f648a6e0de24e861c444de",
+        "signature": "fef2eb03ed467393eba7543ef2d2059532e5885a60cee9941300a70339033bfc",
+        "affectsGlobalScope": false
+      },
+      "./src/utils/index.ts": {
+        "version": "9bd62c39ab45e5eaf94f219ff448f026fbb6a2b47e3a777f4254f1e97ef24b5f",
+        "signature": "88d5a327aab6ef30dc2a25034502ad71006826d6ab21056cd8d88c5cdd0a0f77",
+        "affectsGlobalScope": false
+      },
+      "./src/index.ts": {
+        "version": "6ced79ca8571cc4f7546beae27b56d34341ed608779a73341225f009f730b5c3",
+        "signature": "449a107a5307366ed51c2befdd0527356aa95f83e84369b9b4d9b9e8cdcf22f1",
         "affectsGlobalScope": false
       },
       "./node_modules/@types/node/globals.d.ts": {
@@ -860,11 +945,6 @@
       "emitDecoratorMetadata": true,
       "skipLibCheck": true,
       "forceConsistentCasingInFileNames": true,
-      "pretty": false,
-      "noEmit": true,
-      "watch": true,
-      "listFiles": true,
-      "project": "./tsconfig.json",
       "configFilePath": "./tsconfig.json"
     },
     "referencedMap": {
@@ -1035,13 +1115,44 @@
       "./node_modules/@types/node/zlib.d.ts": [
         "./node_modules/@types/node/stream.d.ts"
       ],
+      "./src/exceptions/index.ts": [
+        "./src/exceptions/chaterror.ts",
+        "./src/exceptions/dadospessoaiserror.ts",
+        "./src/exceptions/emailerror.ts",
+        "./src/exceptions/enderecoerror.ts",
+        "./src/exceptions/perfilerror.ts",
+        "./src/exceptions/servicoerror.ts",
+        "./src/exceptions/telefoneerror.ts",
+        "./src/exceptions/termobuscaerror.ts"
+      ],
+      "./src/index.ts": [
+        "./src/config.ts",
+        "./src/exceptions/index.ts",
+        "./src/interfaces/index.ts",
+        "./src/models/index.ts",
+        "./src/tipos/index.ts",
+        "./src/utils/index.ts"
+      ],
       "./src/interfaces/controllers/clientebuscacontroller.ts": [
         "./src/models/busca/busca.ts",
         "./src/models/chat/salabusca.ts"
       ],
+      "./src/interfaces/controllers/index.ts": [
+        "./src/interfaces/controllers/clientebuscacontroller.ts",
+        "./src/interfaces/controllers/prestadorbuscacontroller.ts"
+      ],
       "./src/interfaces/controllers/prestadorbuscacontroller.ts": [
         "./src/models/chat/chat.ts",
         "./src/models/chat/salabusca.ts"
+      ],
+      "./src/interfaces/index.ts": [
+        "./src/interfaces/controllers/index.ts",
+        "./src/interfaces/models/index.ts"
+      ],
+      "./src/interfaces/models/busca/index.ts": [
+        "./src/interfaces/models/busca/propsbusca.ts",
+        "./src/interfaces/models/busca/propspingbusca.ts",
+        "./src/interfaces/models/busca/propstermobusca.ts"
       ],
       "./src/interfaces/models/busca/propsbusca.ts": [
         "./src/models/busca/termobusca.ts",
@@ -1054,6 +1165,11 @@
         "./src/models/busca/busca.ts",
         "./src/tipos/tipooperacaotermobusca.ts",
         "./src/tipos/tipotermobusca.ts"
+      ],
+      "./src/interfaces/models/chat/index.ts": [
+        "./src/interfaces/models/chat/propschat.ts",
+        "./src/interfaces/models/chat/propsmensagem.ts",
+        "./src/interfaces/models/chat/propssalabusca.ts"
       ],
       "./src/interfaces/models/chat/propschat.ts": [
         "./src/models/chat/mensagem.ts",
@@ -1068,6 +1184,20 @@
       "./src/interfaces/models/chat/propssalabusca.ts": [
         "./src/models/busca/busca.ts",
         "./src/models/chat/chat.ts"
+      ],
+      "./src/interfaces/models/dados/index.ts": [
+        "./src/interfaces/models/dados/propsdadoscadastro.ts",
+        "./src/interfaces/models/dados/propsdadosexibicao.ts",
+        "./src/interfaces/models/dados/propsdadoslogin.ts",
+        "./src/interfaces/models/dados/propsdadospessoais.ts",
+        "./src/interfaces/models/dados/propsemail.ts",
+        "./src/interfaces/models/dados/propsendereco.ts",
+        "./src/interfaces/models/dados/propsperfil.ts",
+        "./src/interfaces/models/dados/propsperfilcliente.ts",
+        "./src/interfaces/models/dados/propsperfilprestador.ts",
+        "./src/interfaces/models/dados/propsservico.ts",
+        "./src/interfaces/models/dados/propsservicoprestado.ts",
+        "./src/interfaces/models/dados/propstelefone.ts"
       ],
       "./src/interfaces/models/dados/propsdadosexibicao.ts": [
         "./src/models/midia/foto.ts"
@@ -1110,6 +1240,12 @@
         "./src/tipos/tipodadoestatistico.ts",
         "./src/tipos/tipoorigem.ts"
       ],
+      "./src/interfaces/models/estatisticas/index.ts": [
+        "./src/interfaces/models/estatisticas/dadosestatisticos.ts",
+        "./src/interfaces/models/estatisticas/propsdadosestatisticos.ts",
+        "./src/interfaces/models/estatisticas/propsdadosestatisticosclique.ts",
+        "./src/interfaces/models/estatisticas/propsdadosestatisticosexibicao.ts"
+      ],
       "./src/interfaces/models/estatisticas/propsdadosestatisticos.ts": [
         "./src/tipos/tipoorigem.ts"
       ],
@@ -1118,6 +1254,17 @@
       ],
       "./src/interfaces/models/estatisticas/propsdadosestatisticosexibicao.ts": [
         "./src/interfaces/models/estatisticas/propsdadosestatisticos.ts"
+      ],
+      "./src/interfaces/models/index.ts": [
+        "./src/interfaces/models/busca/index.ts",
+        "./src/interfaces/models/chat/index.ts",
+        "./src/interfaces/models/dados/index.ts",
+        "./src/interfaces/models/estatisticas/index.ts",
+        "./src/interfaces/models/midia/index.ts"
+      ],
+      "./src/interfaces/models/midia/index.ts": [
+        "./src/interfaces/models/midia/propsmidia.ts",
+        "./src/interfaces/models/midia/propsvideo.ts"
       ],
       "./src/interfaces/models/midia/propsvideo.ts": [
         "./src/interfaces/models/midia/propsmidia.ts"
@@ -1129,6 +1276,11 @@
         "./src/models/busca/termobusca.ts",
         "./src/models/dados/perfilcliente.ts",
         "./src/models/id.ts"
+      ],
+      "./src/models/busca/index.ts": [
+        "./src/models/busca/busca.ts",
+        "./src/models/busca/pingbusca.ts",
+        "./src/models/busca/termobusca.ts"
       ],
       "./src/models/busca/pingbusca.ts": [
         "./src/interfaces/models/busca/propspingbusca.ts",
@@ -1147,6 +1299,11 @@
         "./src/models/chat/mensagem.ts",
         "./src/models/chat/salabusca.ts",
         "./src/models/id.ts"
+      ],
+      "./src/models/chat/index.ts": [
+        "./src/models/chat/chat.ts",
+        "./src/models/chat/mensagem.ts",
+        "./src/models/chat/salabusca.ts"
       ],
       "./src/models/chat/mensagem.ts": [
         "./src/interfaces/models/chat/propsmensagem.ts",
@@ -1209,6 +1366,21 @@
         "./src/interfaces/models/dados/propsendereco.ts",
         "./src/models/id.ts",
         "./src/tipos/tipoendereco.ts"
+      ],
+      "./src/models/dados/index.ts": [
+        "./src/models/dados/dadoscadastro.ts",
+        "./src/models/dados/dadosexibicao.ts",
+        "./src/models/dados/dadoslogin.ts",
+        "./src/models/dados/dadospessoais.ts",
+        "./src/models/dados/email.ts",
+        "./src/models/dados/endereco.ts",
+        "./src/models/dados/perfil.ts",
+        "./src/models/dados/perfilcliente.ts",
+        "./src/models/dados/perfilprestador.ts",
+        "./src/models/dados/perfilsocial.ts",
+        "./src/models/dados/servico.ts",
+        "./src/models/dados/servicoprestado.ts",
+        "./src/models/dados/telefone.ts"
       ],
       "./src/models/dados/perfil.ts": [
         "./src/exceptions/perfilerror.ts",
@@ -1278,15 +1450,35 @@
         "./src/models/estatisticas/dadosestatisticos.ts",
         "./src/tipos/tipodadoestatistico.ts"
       ],
+      "./src/models/estatisticas/index.ts": [
+        "./src/models/estatisticas/avaliacao.ts",
+        "./src/models/estatisticas/clique.ts",
+        "./src/models/estatisticas/dadosestatisticos.ts",
+        "./src/models/estatisticas/exibicao.ts",
+        "./src/models/estatisticas/referencia.ts"
+      ],
       "./src/models/estatisticas/referencia.ts": [
         "./src/interfaces/models/estatisticas/propsdadosestatisticos.ts",
         "./src/models/estatisticas/dadosestatisticos.ts",
         "./src/tipos/tipodadoestatistico.ts"
       ],
+      "./src/models/index.ts": [
+        "./src/models/busca/index.ts",
+        "./src/models/chat/index.ts",
+        "./src/models/dados/index.ts",
+        "./src/models/estatisticas/index.ts",
+        "./src/models/id.ts",
+        "./src/models/midia/index.ts"
+      ],
       "./src/models/midia/foto.ts": [
         "./src/interfaces/models/midia/propsmidia.ts",
         "./src/models/midia/midia.ts",
         "./src/tipos/tipomidia.ts"
+      ],
+      "./src/models/midia/index.ts": [
+        "./src/models/midia/foto.ts",
+        "./src/models/midia/midia.ts",
+        "./src/models/midia/video.ts"
       ],
       "./src/models/midia/midia.ts": [
         "./src/interfaces/models/midia/propsmidia.ts",
@@ -1299,6 +1491,21 @@
         "./src/models/midia/midia.ts",
         "./src/tipos/tipomidia.ts"
       ],
+      "./src/tipos/index.ts": [
+        "./src/tipos/statusmensagem.ts",
+        "./src/tipos/tipodadoestatistico.ts",
+        "./src/tipos/tipoemail.ts",
+        "./src/tipos/tipoendereco.ts",
+        "./src/tipos/tipofuncaotelefone.ts",
+        "./src/tipos/tipologin.ts",
+        "./src/tipos/tipomidia.ts",
+        "./src/tipos/tipooperacaotermobusca.ts",
+        "./src/tipos/tipoorigem.ts",
+        "./src/tipos/tipoorigemmensagem.ts",
+        "./src/tipos/tipoperfil.ts",
+        "./src/tipos/tipotelefone.ts",
+        "./src/tipos/tipotermobusca.ts"
+      ],
       "./src/utils/crypto.ts": [
         "./node_modules/@types/bcrypt/index.d.ts"
       ],
@@ -1306,6 +1513,12 @@
         "./src/interfaces/models/dados/propsemail.ts",
         "./src/models/dados/email.ts",
         "./src/tipos/tipoemail.ts"
+      ],
+      "./src/utils/index.ts": [
+        "./src/utils/crypto.ts",
+        "./src/utils/data.ts",
+        "./src/utils/email.ts",
+        "./src/utils/telefone.ts"
       ],
       "./src/utils/telefone.ts": [
         "./node_modules/awesome-phonenumber/index.d.ts",
@@ -1483,13 +1696,44 @@
       "./node_modules/@types/node/zlib.d.ts": [
         "./node_modules/@types/node/stream.d.ts"
       ],
+      "./src/exceptions/index.ts": [
+        "./src/exceptions/chaterror.ts",
+        "./src/exceptions/dadospessoaiserror.ts",
+        "./src/exceptions/emailerror.ts",
+        "./src/exceptions/enderecoerror.ts",
+        "./src/exceptions/perfilerror.ts",
+        "./src/exceptions/servicoerror.ts",
+        "./src/exceptions/telefoneerror.ts",
+        "./src/exceptions/termobuscaerror.ts"
+      ],
+      "./src/index.ts": [
+        "./src/config.ts",
+        "./src/exceptions/index.ts",
+        "./src/interfaces/index.ts",
+        "./src/models/index.ts",
+        "./src/tipos/index.ts",
+        "./src/utils/index.ts"
+      ],
       "./src/interfaces/controllers/clientebuscacontroller.ts": [
         "./src/models/busca/busca.ts",
         "./src/models/chat/salabusca.ts"
       ],
+      "./src/interfaces/controllers/index.ts": [
+        "./src/interfaces/controllers/clientebuscacontroller.ts",
+        "./src/interfaces/controllers/prestadorbuscacontroller.ts"
+      ],
       "./src/interfaces/controllers/prestadorbuscacontroller.ts": [
         "./src/models/chat/chat.ts",
         "./src/models/chat/salabusca.ts"
+      ],
+      "./src/interfaces/index.ts": [
+        "./src/interfaces/controllers/index.ts",
+        "./src/interfaces/models/index.ts"
+      ],
+      "./src/interfaces/models/busca/index.ts": [
+        "./src/interfaces/models/busca/propsbusca.ts",
+        "./src/interfaces/models/busca/propspingbusca.ts",
+        "./src/interfaces/models/busca/propstermobusca.ts"
       ],
       "./src/interfaces/models/busca/propsbusca.ts": [
         "./src/models/busca/termobusca.ts",
@@ -1502,6 +1746,11 @@
         "./src/models/busca/busca.ts",
         "./src/tipos/tipooperacaotermobusca.ts",
         "./src/tipos/tipotermobusca.ts"
+      ],
+      "./src/interfaces/models/chat/index.ts": [
+        "./src/interfaces/models/chat/propschat.ts",
+        "./src/interfaces/models/chat/propsmensagem.ts",
+        "./src/interfaces/models/chat/propssalabusca.ts"
       ],
       "./src/interfaces/models/chat/propschat.ts": [
         "./src/models/chat/mensagem.ts",
@@ -1516,6 +1765,20 @@
       "./src/interfaces/models/chat/propssalabusca.ts": [
         "./src/models/busca/busca.ts",
         "./src/models/chat/chat.ts"
+      ],
+      "./src/interfaces/models/dados/index.ts": [
+        "./src/interfaces/models/dados/propsdadoscadastro.ts",
+        "./src/interfaces/models/dados/propsdadosexibicao.ts",
+        "./src/interfaces/models/dados/propsdadoslogin.ts",
+        "./src/interfaces/models/dados/propsdadospessoais.ts",
+        "./src/interfaces/models/dados/propsemail.ts",
+        "./src/interfaces/models/dados/propsendereco.ts",
+        "./src/interfaces/models/dados/propsperfil.ts",
+        "./src/interfaces/models/dados/propsperfilcliente.ts",
+        "./src/interfaces/models/dados/propsperfilprestador.ts",
+        "./src/interfaces/models/dados/propsservico.ts",
+        "./src/interfaces/models/dados/propsservicoprestado.ts",
+        "./src/interfaces/models/dados/propstelefone.ts"
       ],
       "./src/interfaces/models/dados/propsdadosexibicao.ts": [
         "./src/models/midia/foto.ts"
@@ -1558,6 +1821,12 @@
         "./src/tipos/tipodadoestatistico.ts",
         "./src/tipos/tipoorigem.ts"
       ],
+      "./src/interfaces/models/estatisticas/index.ts": [
+        "./src/interfaces/models/estatisticas/dadosestatisticos.ts",
+        "./src/interfaces/models/estatisticas/propsdadosestatisticos.ts",
+        "./src/interfaces/models/estatisticas/propsdadosestatisticosclique.ts",
+        "./src/interfaces/models/estatisticas/propsdadosestatisticosexibicao.ts"
+      ],
       "./src/interfaces/models/estatisticas/propsdadosestatisticos.ts": [
         "./src/tipos/tipoorigem.ts"
       ],
@@ -1566,6 +1835,17 @@
       ],
       "./src/interfaces/models/estatisticas/propsdadosestatisticosexibicao.ts": [
         "./src/interfaces/models/estatisticas/propsdadosestatisticos.ts"
+      ],
+      "./src/interfaces/models/index.ts": [
+        "./src/interfaces/models/busca/index.ts",
+        "./src/interfaces/models/chat/index.ts",
+        "./src/interfaces/models/dados/index.ts",
+        "./src/interfaces/models/estatisticas/index.ts",
+        "./src/interfaces/models/midia/index.ts"
+      ],
+      "./src/interfaces/models/midia/index.ts": [
+        "./src/interfaces/models/midia/propsmidia.ts",
+        "./src/interfaces/models/midia/propsvideo.ts"
       ],
       "./src/interfaces/models/midia/propsvideo.ts": [
         "./src/interfaces/models/midia/propsmidia.ts"
@@ -1576,6 +1856,11 @@
         "./src/models/busca/termobusca.ts",
         "./src/models/dados/perfilcliente.ts",
         "./src/models/id.ts"
+      ],
+      "./src/models/busca/index.ts": [
+        "./src/models/busca/busca.ts",
+        "./src/models/busca/pingbusca.ts",
+        "./src/models/busca/termobusca.ts"
       ],
       "./src/models/busca/pingbusca.ts": [
         "./src/interfaces/models/busca/propspingbusca.ts",
@@ -1593,6 +1878,11 @@
         "./src/models/chat/mensagem.ts",
         "./src/models/chat/salabusca.ts",
         "./src/models/id.ts"
+      ],
+      "./src/models/chat/index.ts": [
+        "./src/models/chat/chat.ts",
+        "./src/models/chat/mensagem.ts",
+        "./src/models/chat/salabusca.ts"
       ],
       "./src/models/chat/mensagem.ts": [
         "./src/interfaces/models/chat/propsmensagem.ts",
@@ -1642,6 +1932,21 @@
         "./src/interfaces/models/dados/propsendereco.ts",
         "./src/models/id.ts",
         "./src/tipos/tipoendereco.ts"
+      ],
+      "./src/models/dados/index.ts": [
+        "./src/models/dados/dadoscadastro.ts",
+        "./src/models/dados/dadosexibicao.ts",
+        "./src/models/dados/dadoslogin.ts",
+        "./src/models/dados/dadospessoais.ts",
+        "./src/models/dados/email.ts",
+        "./src/models/dados/endereco.ts",
+        "./src/models/dados/perfil.ts",
+        "./src/models/dados/perfilcliente.ts",
+        "./src/models/dados/perfilprestador.ts",
+        "./src/models/dados/perfilsocial.ts",
+        "./src/models/dados/servico.ts",
+        "./src/models/dados/servicoprestado.ts",
+        "./src/models/dados/telefone.ts"
       ],
       "./src/models/dados/perfil.ts": [
         "./src/interfaces/models/dados/propsperfil.ts",
@@ -1702,13 +2007,33 @@
         "./src/interfaces/models/estatisticas/propsdadosestatisticosexibicao.ts",
         "./src/models/estatisticas/dadosestatisticos.ts"
       ],
+      "./src/models/estatisticas/index.ts": [
+        "./src/models/estatisticas/avaliacao.ts",
+        "./src/models/estatisticas/clique.ts",
+        "./src/models/estatisticas/dadosestatisticos.ts",
+        "./src/models/estatisticas/exibicao.ts",
+        "./src/models/estatisticas/referencia.ts"
+      ],
       "./src/models/estatisticas/referencia.ts": [
         "./src/interfaces/models/estatisticas/propsdadosestatisticos.ts",
         "./src/models/estatisticas/dadosestatisticos.ts"
       ],
+      "./src/models/index.ts": [
+        "./src/models/busca/index.ts",
+        "./src/models/chat/index.ts",
+        "./src/models/dados/index.ts",
+        "./src/models/estatisticas/index.ts",
+        "./src/models/id.ts",
+        "./src/models/midia/index.ts"
+      ],
       "./src/models/midia/foto.ts": [
         "./src/interfaces/models/midia/propsmidia.ts",
         "./src/models/midia/midia.ts"
+      ],
+      "./src/models/midia/index.ts": [
+        "./src/models/midia/foto.ts",
+        "./src/models/midia/midia.ts",
+        "./src/models/midia/video.ts"
       ],
       "./src/models/midia/midia.ts": [
         "./src/interfaces/models/midia/propsmidia.ts",
@@ -1720,10 +2045,31 @@
         "./src/interfaces/models/midia/propsvideo.ts",
         "./src/models/midia/midia.ts"
       ],
+      "./src/tipos/index.ts": [
+        "./src/tipos/statusmensagem.ts",
+        "./src/tipos/tipodadoestatistico.ts",
+        "./src/tipos/tipoemail.ts",
+        "./src/tipos/tipoendereco.ts",
+        "./src/tipos/tipofuncaotelefone.ts",
+        "./src/tipos/tipologin.ts",
+        "./src/tipos/tipomidia.ts",
+        "./src/tipos/tipooperacaotermobusca.ts",
+        "./src/tipos/tipoorigem.ts",
+        "./src/tipos/tipoorigemmensagem.ts",
+        "./src/tipos/tipoperfil.ts",
+        "./src/tipos/tipotelefone.ts",
+        "./src/tipos/tipotermobusca.ts"
+      ],
       "./src/utils/email.ts": [
         "./src/interfaces/models/dados/propsemail.ts",
         "./src/models/dados/email.ts",
         "./src/tipos/tipoemail.ts"
+      ],
+      "./src/utils/index.ts": [
+        "./src/utils/crypto.ts",
+        "./src/utils/data.ts",
+        "./src/utils/email.ts",
+        "./src/utils/telefone.ts"
       ],
       "./src/utils/telefone.ts": [
         "./node_modules/awesome-phonenumber/index.d.ts",
@@ -1790,19 +2136,25 @@
       "./src/exceptions/dadospessoaiserror.ts",
       "./src/exceptions/emailerror.ts",
       "./src/exceptions/enderecoerror.ts",
+      "./src/exceptions/index.ts",
       "./src/exceptions/perfilerror.ts",
       "./src/exceptions/servicoerror.ts",
       "./src/exceptions/telefoneerror.ts",
       "./src/exceptions/termobuscaerror.ts",
       "./src/index.ts",
       "./src/interfaces/controllers/clientebuscacontroller.ts",
+      "./src/interfaces/controllers/index.ts",
       "./src/interfaces/controllers/prestadorbuscacontroller.ts",
+      "./src/interfaces/index.ts",
+      "./src/interfaces/models/busca/index.ts",
       "./src/interfaces/models/busca/propsbusca.ts",
       "./src/interfaces/models/busca/propspingbusca.ts",
       "./src/interfaces/models/busca/propstermobusca.ts",
+      "./src/interfaces/models/chat/index.ts",
       "./src/interfaces/models/chat/propschat.ts",
       "./src/interfaces/models/chat/propsmensagem.ts",
       "./src/interfaces/models/chat/propssalabusca.ts",
+      "./src/interfaces/models/dados/index.ts",
       "./src/interfaces/models/dados/propsdadoscadastro.ts",
       "./src/interfaces/models/dados/propsdadosexibicao.ts",
       "./src/interfaces/models/dados/propsdadoslogin.ts",
@@ -1816,15 +2168,20 @@
       "./src/interfaces/models/dados/propsservicoprestado.ts",
       "./src/interfaces/models/dados/propstelefone.ts",
       "./src/interfaces/models/estatisticas/dadosestatisticos.ts",
+      "./src/interfaces/models/estatisticas/index.ts",
       "./src/interfaces/models/estatisticas/propsdadosestatisticos.ts",
       "./src/interfaces/models/estatisticas/propsdadosestatisticosclique.ts",
       "./src/interfaces/models/estatisticas/propsdadosestatisticosexibicao.ts",
+      "./src/interfaces/models/index.ts",
+      "./src/interfaces/models/midia/index.ts",
       "./src/interfaces/models/midia/propsmidia.ts",
       "./src/interfaces/models/midia/propsvideo.ts",
       "./src/models/busca/busca.ts",
+      "./src/models/busca/index.ts",
       "./src/models/busca/pingbusca.ts",
       "./src/models/busca/termobusca.ts",
       "./src/models/chat/chat.ts",
+      "./src/models/chat/index.ts",
       "./src/models/chat/mensagem.ts",
       "./src/models/chat/salabusca.ts",
       "./src/models/dados/dadoscadastro.ts",
@@ -1833,6 +2190,7 @@
       "./src/models/dados/dadospessoais.ts",
       "./src/models/dados/email.ts",
       "./src/models/dados/endereco.ts",
+      "./src/models/dados/index.ts",
       "./src/models/dados/perfil.ts",
       "./src/models/dados/perfilcliente.ts",
       "./src/models/dados/perfilprestador.ts",
@@ -1844,11 +2202,15 @@
       "./src/models/estatisticas/clique.ts",
       "./src/models/estatisticas/dadosestatisticos.ts",
       "./src/models/estatisticas/exibicao.ts",
+      "./src/models/estatisticas/index.ts",
       "./src/models/estatisticas/referencia.ts",
       "./src/models/id.ts",
+      "./src/models/index.ts",
       "./src/models/midia/foto.ts",
+      "./src/models/midia/index.ts",
       "./src/models/midia/midia.ts",
       "./src/models/midia/video.ts",
+      "./src/tipos/index.ts",
       "./src/tipos/statusmensagem.ts",
       "./src/tipos/tipodadoestatistico.ts",
       "./src/tipos/tipoemail.ts",
@@ -1865,598 +2227,41 @@
       "./src/utils/crypto.ts",
       "./src/utils/data.ts",
       "./src/utils/email.ts",
+      "./src/utils/index.ts",
       "./src/utils/telefone.ts",
-      "../../../users/iurin/.vscode/extensions/basarat.god-0.0.99/node_modules/typescript/lib/lib.dom.d.ts",
-      "../../../users/iurin/.vscode/extensions/basarat.god-0.0.99/node_modules/typescript/lib/lib.dom.iterable.d.ts",
-      "../../../users/iurin/.vscode/extensions/basarat.god-0.0.99/node_modules/typescript/lib/lib.es2015.collection.d.ts",
-      "../../../users/iurin/.vscode/extensions/basarat.god-0.0.99/node_modules/typescript/lib/lib.es2015.core.d.ts",
-      "../../../users/iurin/.vscode/extensions/basarat.god-0.0.99/node_modules/typescript/lib/lib.es2015.d.ts",
-      "../../../users/iurin/.vscode/extensions/basarat.god-0.0.99/node_modules/typescript/lib/lib.es2015.generator.d.ts",
-      "../../../users/iurin/.vscode/extensions/basarat.god-0.0.99/node_modules/typescript/lib/lib.es2015.iterable.d.ts",
-      "../../../users/iurin/.vscode/extensions/basarat.god-0.0.99/node_modules/typescript/lib/lib.es2015.promise.d.ts",
-      "../../../users/iurin/.vscode/extensions/basarat.god-0.0.99/node_modules/typescript/lib/lib.es2015.proxy.d.ts",
-      "../../../users/iurin/.vscode/extensions/basarat.god-0.0.99/node_modules/typescript/lib/lib.es2015.reflect.d.ts",
-      "../../../users/iurin/.vscode/extensions/basarat.god-0.0.99/node_modules/typescript/lib/lib.es2015.symbol.d.ts",
-      "../../../users/iurin/.vscode/extensions/basarat.god-0.0.99/node_modules/typescript/lib/lib.es2015.symbol.wellknown.d.ts",
-      "../../../users/iurin/.vscode/extensions/basarat.god-0.0.99/node_modules/typescript/lib/lib.es2016.array.include.d.ts",
-      "../../../users/iurin/.vscode/extensions/basarat.god-0.0.99/node_modules/typescript/lib/lib.es2016.d.ts",
-      "../../../users/iurin/.vscode/extensions/basarat.god-0.0.99/node_modules/typescript/lib/lib.es2017.d.ts",
-      "../../../users/iurin/.vscode/extensions/basarat.god-0.0.99/node_modules/typescript/lib/lib.es2017.intl.d.ts",
-      "../../../users/iurin/.vscode/extensions/basarat.god-0.0.99/node_modules/typescript/lib/lib.es2017.object.d.ts",
-      "../../../users/iurin/.vscode/extensions/basarat.god-0.0.99/node_modules/typescript/lib/lib.es2017.sharedmemory.d.ts",
-      "../../../users/iurin/.vscode/extensions/basarat.god-0.0.99/node_modules/typescript/lib/lib.es2017.string.d.ts",
-      "../../../users/iurin/.vscode/extensions/basarat.god-0.0.99/node_modules/typescript/lib/lib.es2017.typedarrays.d.ts",
-      "../../../users/iurin/.vscode/extensions/basarat.god-0.0.99/node_modules/typescript/lib/lib.es2018.asyncgenerator.d.ts",
-      "../../../users/iurin/.vscode/extensions/basarat.god-0.0.99/node_modules/typescript/lib/lib.es2018.asynciterable.d.ts",
-      "../../../users/iurin/.vscode/extensions/basarat.god-0.0.99/node_modules/typescript/lib/lib.es2018.d.ts",
-      "../../../users/iurin/.vscode/extensions/basarat.god-0.0.99/node_modules/typescript/lib/lib.es2018.intl.d.ts",
-      "../../../users/iurin/.vscode/extensions/basarat.god-0.0.99/node_modules/typescript/lib/lib.es2018.promise.d.ts",
-      "../../../users/iurin/.vscode/extensions/basarat.god-0.0.99/node_modules/typescript/lib/lib.es2018.regexp.d.ts",
-      "../../../users/iurin/.vscode/extensions/basarat.god-0.0.99/node_modules/typescript/lib/lib.es2020.bigint.d.ts",
-      "../../../users/iurin/.vscode/extensions/basarat.god-0.0.99/node_modules/typescript/lib/lib.es5.d.ts",
-      "../../../users/iurin/.vscode/extensions/basarat.god-0.0.99/node_modules/typescript/lib/lib.es6.d.ts",
-      "../../../users/iurin/.vscode/extensions/basarat.god-0.0.99/node_modules/typescript/lib/lib.esnext.intl.d.ts",
-      "../../../users/iurin/.vscode/extensions/basarat.god-0.0.99/node_modules/typescript/lib/lib.scripthost.d.ts",
-      "../../../users/iurin/.vscode/extensions/basarat.god-0.0.99/node_modules/typescript/lib/lib.webworker.importscripts.d.ts"
-    ],
-    "affectedFilesPendingEmit": [
-      [
-        "./node_modules/@types/bcrypt/index.d.ts",
-        1
-      ],
-      [
-        "./node_modules/@types/node/assert.d.ts",
-        1
-      ],
-      [
-        "./node_modules/@types/node/async_hooks.d.ts",
-        1
-      ],
-      [
-        "./node_modules/@types/node/base.d.ts",
-        1
-      ],
-      [
-        "./node_modules/@types/node/buffer.d.ts",
-        1
-      ],
-      [
-        "./node_modules/@types/node/child_process.d.ts",
-        1
-      ],
-      [
-        "./node_modules/@types/node/cluster.d.ts",
-        1
-      ],
-      [
-        "./node_modules/@types/node/console.d.ts",
-        1
-      ],
-      [
-        "./node_modules/@types/node/constants.d.ts",
-        1
-      ],
-      [
-        "./node_modules/@types/node/crypto.d.ts",
-        1
-      ],
-      [
-        "./node_modules/@types/node/dgram.d.ts",
-        1
-      ],
-      [
-        "./node_modules/@types/node/dns.d.ts",
-        1
-      ],
-      [
-        "./node_modules/@types/node/domain.d.ts",
-        1
-      ],
-      [
-        "./node_modules/@types/node/events.d.ts",
-        1
-      ],
-      [
-        "./node_modules/@types/node/fs.d.ts",
-        1
-      ],
-      [
-        "./node_modules/@types/node/fs/promises.d.ts",
-        1
-      ],
-      [
-        "./node_modules/@types/node/globals.d.ts",
-        1
-      ],
-      [
-        "./node_modules/@types/node/globals.global.d.ts",
-        1
-      ],
-      [
-        "./node_modules/@types/node/http.d.ts",
-        1
-      ],
-      [
-        "./node_modules/@types/node/http2.d.ts",
-        1
-      ],
-      [
-        "./node_modules/@types/node/https.d.ts",
-        1
-      ],
-      [
-        "./node_modules/@types/node/index.d.ts",
-        1
-      ],
-      [
-        "./node_modules/@types/node/inspector.d.ts",
-        1
-      ],
-      [
-        "./node_modules/@types/node/module.d.ts",
-        1
-      ],
-      [
-        "./node_modules/@types/node/net.d.ts",
-        1
-      ],
-      [
-        "./node_modules/@types/node/os.d.ts",
-        1
-      ],
-      [
-        "./node_modules/@types/node/path.d.ts",
-        1
-      ],
-      [
-        "./node_modules/@types/node/perf_hooks.d.ts",
-        1
-      ],
-      [
-        "./node_modules/@types/node/process.d.ts",
-        1
-      ],
-      [
-        "./node_modules/@types/node/punycode.d.ts",
-        1
-      ],
-      [
-        "./node_modules/@types/node/querystring.d.ts",
-        1
-      ],
-      [
-        "./node_modules/@types/node/readline.d.ts",
-        1
-      ],
-      [
-        "./node_modules/@types/node/repl.d.ts",
-        1
-      ],
-      [
-        "./node_modules/@types/node/stream.d.ts",
-        1
-      ],
-      [
-        "./node_modules/@types/node/string_decoder.d.ts",
-        1
-      ],
-      [
-        "./node_modules/@types/node/timers.d.ts",
-        1
-      ],
-      [
-        "./node_modules/@types/node/tls.d.ts",
-        1
-      ],
-      [
-        "./node_modules/@types/node/trace_events.d.ts",
-        1
-      ],
-      [
-        "./node_modules/@types/node/ts3.4/base.d.ts",
-        1
-      ],
-      [
-        "./node_modules/@types/node/ts3.6/base.d.ts",
-        1
-      ],
-      [
-        "./node_modules/@types/node/tty.d.ts",
-        1
-      ],
-      [
-        "./node_modules/@types/node/url.d.ts",
-        1
-      ],
-      [
-        "./node_modules/@types/node/util.d.ts",
-        1
-      ],
-      [
-        "./node_modules/@types/node/v8.d.ts",
-        1
-      ],
-      [
-        "./node_modules/@types/node/vm.d.ts",
-        1
-      ],
-      [
-        "./node_modules/@types/node/wasi.d.ts",
-        1
-      ],
-      [
-        "./node_modules/@types/node/worker_threads.d.ts",
-        1
-      ],
-      [
-        "./node_modules/@types/node/zlib.d.ts",
-        1
-      ],
-      [
-        "./node_modules/@types/uuid/index.d.ts",
-        1
-      ],
-      [
-        "./node_modules/awesome-phonenumber/index.d.ts",
-        1
-      ],
-      [
-        "./node_modules/email-validator/index.d.ts",
-        1
-      ],
-      [
-        "./node_modules/generate-password/src/generate.d.ts",
-        1
-      ],
-      [
-        "./node_modules/tslib/tslib.d.ts",
-        1
-      ],
-      [
-        "./src/config.ts",
-        1
-      ],
-      [
-        "./src/exceptions/chaterror.ts",
-        1
-      ],
-      [
-        "./src/exceptions/dadospessoaiserror.ts",
-        1
-      ],
-      [
-        "./src/exceptions/emailerror.ts",
-        1
-      ],
-      [
-        "./src/exceptions/enderecoerror.ts",
-        1
-      ],
-      [
-        "./src/exceptions/perfilerror.ts",
-        1
-      ],
-      [
-        "./src/exceptions/servicoerror.ts",
-        1
-      ],
-      [
-        "./src/exceptions/telefoneerror.ts",
-        1
-      ],
-      [
-        "./src/exceptions/termobuscaerror.ts",
-        1
-      ],
-      [
-        "./src/index.ts",
-        1
-      ],
-      [
-        "./src/interfaces/controllers/clientebuscacontroller.ts",
-        1
-      ],
-      [
-        "./src/interfaces/controllers/prestadorbuscacontroller.ts",
-        1
-      ],
-      [
-        "./src/interfaces/models/busca/propsbusca.ts",
-        1
-      ],
-      [
-        "./src/interfaces/models/busca/propspingbusca.ts",
-        1
-      ],
-      [
-        "./src/interfaces/models/busca/propstermobusca.ts",
-        1
-      ],
-      [
-        "./src/interfaces/models/chat/propschat.ts",
-        1
-      ],
-      [
-        "./src/interfaces/models/chat/propsmensagem.ts",
-        1
-      ],
-      [
-        "./src/interfaces/models/chat/propssalabusca.ts",
-        1
-      ],
-      [
-        "./src/interfaces/models/dados/propsdadoscadastro.ts",
-        1
-      ],
-      [
-        "./src/interfaces/models/dados/propsdadosexibicao.ts",
-        1
-      ],
-      [
-        "./src/interfaces/models/dados/propsdadoslogin.ts",
-        1
-      ],
-      [
-        "./src/interfaces/models/dados/propsdadospessoais.ts",
-        1
-      ],
-      [
-        "./src/interfaces/models/dados/propsemail.ts",
-        1
-      ],
-      [
-        "./src/interfaces/models/dados/propsendereco.ts",
-        1
-      ],
-      [
-        "./src/interfaces/models/dados/propsperfil.ts",
-        1
-      ],
-      [
-        "./src/interfaces/models/dados/propsperfilcliente.ts",
-        1
-      ],
-      [
-        "./src/interfaces/models/dados/propsperfilprestador.ts",
-        1
-      ],
-      [
-        "./src/interfaces/models/dados/propsservico.ts",
-        1
-      ],
-      [
-        "./src/interfaces/models/dados/propsservicoprestado.ts",
-        1
-      ],
-      [
-        "./src/interfaces/models/dados/propstelefone.ts",
-        1
-      ],
-      [
-        "./src/interfaces/models/estatisticas/dadosestatisticos.ts",
-        1
-      ],
-      [
-        "./src/interfaces/models/estatisticas/propsdadosestatisticos.ts",
-        1
-      ],
-      [
-        "./src/interfaces/models/estatisticas/propsdadosestatisticosclique.ts",
-        1
-      ],
-      [
-        "./src/interfaces/models/estatisticas/propsdadosestatisticosexibicao.ts",
-        1
-      ],
-      [
-        "./src/interfaces/models/midia/propsmidia.ts",
-        1
-      ],
-      [
-        "./src/interfaces/models/midia/propsvideo.ts",
-        1
-      ],
-      [
-        "./src/models/busca/busca.ts",
-        1
-      ],
-      [
-        "./src/models/busca/pingbusca.ts",
-        1
-      ],
-      [
-        "./src/models/busca/termobusca.ts",
-        1
-      ],
-      [
-        "./src/models/chat/chat.ts",
-        1
-      ],
-      [
-        "./src/models/chat/mensagem.ts",
-        1
-      ],
-      [
-        "./src/models/chat/salabusca.ts",
-        1
-      ],
-      [
-        "./src/models/dados/dadoscadastro.ts",
-        1
-      ],
-      [
-        "./src/models/dados/dadosexibicao.ts",
-        1
-      ],
-      [
-        "./src/models/dados/dadoslogin.ts",
-        1
-      ],
-      [
-        "./src/models/dados/dadospessoais.ts",
-        1
-      ],
-      [
-        "./src/models/dados/email.ts",
-        1
-      ],
-      [
-        "./src/models/dados/endereco.ts",
-        1
-      ],
-      [
-        "./src/models/dados/perfil.ts",
-        1
-      ],
-      [
-        "./src/models/dados/perfilcliente.ts",
-        1
-      ],
-      [
-        "./src/models/dados/perfilprestador.ts",
-        1
-      ],
-      [
-        "./src/models/dados/perfilsocial.ts",
-        1
-      ],
-      [
-        "./src/models/dados/servico.ts",
-        1
-      ],
-      [
-        "./src/models/dados/servicoprestado.ts",
-        1
-      ],
-      [
-        "./src/models/dados/telefone.ts",
-        1
-      ],
-      [
-        "./src/models/estatisticas/avaliacao.ts",
-        1
-      ],
-      [
-        "./src/models/estatisticas/clique.ts",
-        1
-      ],
-      [
-        "./src/models/estatisticas/dadosestatisticos.ts",
-        1
-      ],
-      [
-        "./src/models/estatisticas/exibicao.ts",
-        1
-      ],
-      [
-        "./src/models/estatisticas/referencia.ts",
-        1
-      ],
-      [
-        "./src/models/id.ts",
-        1
-      ],
-      [
-        "./src/models/midia/foto.ts",
-        1
-      ],
-      [
-        "./src/models/midia/midia.ts",
-        1
-      ],
-      [
-        "./src/models/midia/video.ts",
-        1
-      ],
-      [
-        "./src/tipos/statusmensagem.ts",
-        1
-      ],
-      [
-        "./src/tipos/tipodadoestatistico.ts",
-        1
-      ],
-      [
-        "./src/tipos/tipoemail.ts",
-        1
-      ],
-      [
-        "./src/tipos/tipoendereco.ts",
-        1
-      ],
-      [
-        "./src/tipos/tipofuncaotelefone.ts",
-        1
-      ],
-      [
-        "./src/tipos/tipologin.ts",
-        1
-      ],
-      [
-        "./src/tipos/tipomidia.ts",
-        1
-      ],
-      [
-        "./src/tipos/tipooperacaotermobusca.ts",
-        1
-      ],
-      [
-        "./src/tipos/tipoorigem.ts",
-        1
-      ],
-      [
-        "./src/tipos/tipoorigemmensagem.ts",
-        1
-      ],
-      [
-        "./src/tipos/tipoperfil.ts",
-        1
-      ],
-      [
-        "./src/tipos/tipotelefone.ts",
-        1
-      ],
-      [
-        "./src/tipos/tipotermobusca.ts",
-        1
-      ],
-      [
-        "./src/utils/crypto.ts",
-        1
-      ],
-      [
-        "./src/utils/data.ts",
-        1
-      ],
-      [
-        "./src/utils/email.ts",
-        1
-      ],
-      [
-        "./src/utils/telefone.ts",
-        1
-      ],
-      [
-        "../../../users/iurin/.vscode/extensions/basarat.god-0.0.99/node_modules/typescript/lib/lib.es2015.d.ts",
-        1
-      ],
-      [
-        "../../../users/iurin/.vscode/extensions/basarat.god-0.0.99/node_modules/typescript/lib/lib.es2016.d.ts",
-        1
-      ],
-      [
-        "../../../users/iurin/.vscode/extensions/basarat.god-0.0.99/node_modules/typescript/lib/lib.es2017.d.ts",
-        1
-      ],
-      [
-        "../../../users/iurin/.vscode/extensions/basarat.god-0.0.99/node_modules/typescript/lib/lib.es2018.d.ts",
-        1
-      ],
-      [
-        "../../../users/iurin/.vscode/extensions/basarat.god-0.0.99/node_modules/typescript/lib/lib.es6.d.ts",
-        1
-      ]
+      "../../../users/iurin/appdata/roaming/npm/node_modules/typescript/lib/lib.dom.d.ts",
+      "../../../users/iurin/appdata/roaming/npm/node_modules/typescript/lib/lib.dom.iterable.d.ts",
+      "../../../users/iurin/appdata/roaming/npm/node_modules/typescript/lib/lib.es2015.collection.d.ts",
+      "../../../users/iurin/appdata/roaming/npm/node_modules/typescript/lib/lib.es2015.core.d.ts",
+      "../../../users/iurin/appdata/roaming/npm/node_modules/typescript/lib/lib.es2015.d.ts",
+      "../../../users/iurin/appdata/roaming/npm/node_modules/typescript/lib/lib.es2015.generator.d.ts",
+      "../../../users/iurin/appdata/roaming/npm/node_modules/typescript/lib/lib.es2015.iterable.d.ts",
+      "../../../users/iurin/appdata/roaming/npm/node_modules/typescript/lib/lib.es2015.promise.d.ts",
+      "../../../users/iurin/appdata/roaming/npm/node_modules/typescript/lib/lib.es2015.proxy.d.ts",
+      "../../../users/iurin/appdata/roaming/npm/node_modules/typescript/lib/lib.es2015.reflect.d.ts",
+      "../../../users/iurin/appdata/roaming/npm/node_modules/typescript/lib/lib.es2015.symbol.d.ts",
+      "../../../users/iurin/appdata/roaming/npm/node_modules/typescript/lib/lib.es2015.symbol.wellknown.d.ts",
+      "../../../users/iurin/appdata/roaming/npm/node_modules/typescript/lib/lib.es2016.array.include.d.ts",
+      "../../../users/iurin/appdata/roaming/npm/node_modules/typescript/lib/lib.es2016.d.ts",
+      "../../../users/iurin/appdata/roaming/npm/node_modules/typescript/lib/lib.es2017.d.ts",
+      "../../../users/iurin/appdata/roaming/npm/node_modules/typescript/lib/lib.es2017.intl.d.ts",
+      "../../../users/iurin/appdata/roaming/npm/node_modules/typescript/lib/lib.es2017.object.d.ts",
+      "../../../users/iurin/appdata/roaming/npm/node_modules/typescript/lib/lib.es2017.sharedmemory.d.ts",
+      "../../../users/iurin/appdata/roaming/npm/node_modules/typescript/lib/lib.es2017.string.d.ts",
+      "../../../users/iurin/appdata/roaming/npm/node_modules/typescript/lib/lib.es2017.typedarrays.d.ts",
+      "../../../users/iurin/appdata/roaming/npm/node_modules/typescript/lib/lib.es2018.asyncgenerator.d.ts",
+      "../../../users/iurin/appdata/roaming/npm/node_modules/typescript/lib/lib.es2018.asynciterable.d.ts",
+      "../../../users/iurin/appdata/roaming/npm/node_modules/typescript/lib/lib.es2018.d.ts",
+      "../../../users/iurin/appdata/roaming/npm/node_modules/typescript/lib/lib.es2018.intl.d.ts",
+      "../../../users/iurin/appdata/roaming/npm/node_modules/typescript/lib/lib.es2018.promise.d.ts",
+      "../../../users/iurin/appdata/roaming/npm/node_modules/typescript/lib/lib.es2018.regexp.d.ts",
+      "../../../users/iurin/appdata/roaming/npm/node_modules/typescript/lib/lib.es2020.bigint.d.ts",
+      "../../../users/iurin/appdata/roaming/npm/node_modules/typescript/lib/lib.es5.d.ts",
+      "../../../users/iurin/appdata/roaming/npm/node_modules/typescript/lib/lib.es6.d.ts",
+      "../../../users/iurin/appdata/roaming/npm/node_modules/typescript/lib/lib.esnext.intl.d.ts",
+      "../../../users/iurin/appdata/roaming/npm/node_modules/typescript/lib/lib.scripthost.d.ts",
+      "../../../users/iurin/appdata/roaming/npm/node_modules/typescript/lib/lib.webworker.importscripts.d.ts"
     ]
   },
-  "version": "4.0.3"
+  "version": "3.9.7"
 }

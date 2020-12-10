@@ -1,0 +1,1 @@
+{"version":3,"file":"ClienteBuscaController.d.ts","sourceRoot":"","sources":["../../../src/interfaces/controllers/ClienteBuscaController.ts"],"names":[],"mappings":"AAAA,OAAO,KAAK,MAAM,0BAA0B,CAAC;AAC7C,OAAO,SAAS,MAAM,6BAA6B,CAAC;AAEpD,MAAM,CAAC,OAAO,WAAW,sBAAsB;IAC7C,eAAe,CAAC,KAAK,EAAE,KAAK,GAAG,SAAS,CAAC;IACzC,aAAa,CAAC,KAAK,EAAE,KAAK,GAAG,IAAI,CAAC;CACnC"}

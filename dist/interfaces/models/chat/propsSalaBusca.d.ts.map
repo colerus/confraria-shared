@@ -1,0 +1,1 @@
+{"version":3,"file":"propsSalaBusca.d.ts","sourceRoot":"","sources":["../../../../src/interfaces/models/chat/propsSalaBusca.ts"],"names":[],"mappings":"AAAA,OAAO,KAAK,MAAM,6BAA6B,CAAC;AAChD,OAAO,IAAI,MAAM,2BAA2B,CAAC;AAE7C,MAAM,CAAC,OAAO,WAAW,cAAc;IACrC,EAAE,CAAC,EAAE,MAAM,CAAC;IACZ,KAAK,EAAE,KAAK,CAAC;IACb,KAAK,CAAC,EAAE,IAAI,EAAE,CAAC;CAChB"}

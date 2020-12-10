@@ -1,0 +1,1 @@
+{"version":3,"file":"propsDadosEstatisticosClique.d.ts","sourceRoot":"","sources":["../../../../src/interfaces/models/estatisticas/propsDadosEstatisticosClique.ts"],"names":[],"mappings":"AAAA,OAAO,sBAAsB,MAAM,0BAA0B,CAAC;AAE9D,MAAM,CAAC,OAAO,WAAW,4BAA6B,SAAQ,sBAAsB;IAChF,CAAC,CAAC,EAAE,MAAM,CAAC;IACX,CAAC,CAAC,EAAE,MAAM,CAAC;CACd"}
