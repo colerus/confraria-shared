@@ -1,11 +1,11 @@
-import TipoTermoBusca from "../../../tipos/tipoTermoBusca";
+import Busca from "../../../models/busca/busca";
 import TipoOperacaoTermoBusca from "../../../tipos/tipoOperacaoTermoBusca";
-import Busca from "../../../base/models/busca/busca";
+import TipoTermoBusca from "../../../tipos/tipoTermoBusca";
 
 export default interface PropsTermoBusca {
-    id?: string;
-    busca: Busca;
-    tipoTermo: TipoTermoBusca;
-    tipoOperacao: TipoOperacaoTermoBusca;
-    valor: string;
+  id?: string;
+  busca: Busca;
+  tipoTermo: TipoTermoBusca;
+  tipoOperacao: TipoOperacaoTermoBusca;
+  valor: string;
 }

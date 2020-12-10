@@ -1,11 +1,11 @@
-import Id from "../../../base/models/id";
-import Mensagem from "../../../base/models/chat/mensagem";
-import SalaBusca from "../../../base/models/chat/salaBusca";
+import Mensagem from "../../../models/chat/mensagem";
+import SalaBusca from "../../../models/chat/salaBusca";
+import Id from "../../../models/id";
 
 export default interface PropsChat {
-    id?: string;
-    salaBusca: SalaBusca;
-    idPrestador: Id;
-    mensagens?: Mensagem[];
-    ativo?: boolean;
+  id?: string;
+  salaBusca: SalaBusca;
+  idPrestador: Id;
+  mensagens?: Mensagem[];
+  ativo?: boolean;
 }

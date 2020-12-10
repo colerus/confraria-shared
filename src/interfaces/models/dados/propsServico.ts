@@ -1,8 +1,8 @@
-import Servico from "../../../base/models/dados/servico";
+import Servico from "../../../models/dados/servico";
 
 export default interface PropsServico {
-    id?: string;
-    nome: string;
-    derivacoes?: string[];
-    parent?: Servico;
+  id?: string;
+  nome: string;
+  derivacoes?: string[];
+  parent?: Servico;
 }
