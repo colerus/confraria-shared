@@ -4,7 +4,7 @@
   "description": "Definições compartilhadas entre os módulos",
   "main": "index.js",
   "scripts": {
-    "test": "npm run test"
+    "test": "echo 'No tests implemented yet'. && exit 0"
   },
   "author": "Iuri Neumann",
   "license": "ISC",
