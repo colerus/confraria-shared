@@ -1,7 +1,7 @@
-import Id from "../../../base/models/id";
+import Id from "../../../models/id";
 
 export default interface PropsPingBusca {
-    id?: Id;
-    idbusca: Id;
-    timestamp: number;
+  id?: Id;
+  idbusca: Id;
+  timestamp: number;
 }

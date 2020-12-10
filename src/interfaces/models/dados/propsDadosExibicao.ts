@@ -1,9 +1,8 @@
-import Foto from "../../../base/models/midia/foto";
+import Foto from "../../../models/midia/foto";
 
 export default interface PropsDadosExibicao {
-    id?: string;
-    nomeCurto: string;
-    nomeComercial?: string;
-    fotoPerfil?: Foto;
-
+  id?: string;
+  nomeCurto: string;
+  nomeComercial?: string;
+  fotoPerfil?: Foto;
 }

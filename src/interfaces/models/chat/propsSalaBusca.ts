@@ -1,8 +1,8 @@
-import Busca from "../../../base/models/busca/busca";
-import Chat from "../../../base/models/chat/chat";
+import Busca from "../../../models/busca/busca";
+import Chat from "../../../models/chat/chat";
 
 export default interface PropsSalaBusca {
-    id?: string;
-    busca: Busca;
-    chats?: Chat[];
+  id?: string;
+  busca: Busca;
+  chats?: Chat[];
 }
