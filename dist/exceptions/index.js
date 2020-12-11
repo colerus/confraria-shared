@@ -1,0 +1,21 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.TermoBuscaError = exports.TelefoneError = exports.ServicoError = exports.PerfilError = exports.EnderecoError = exports.EmailError = exports.DadosPessoaisError = exports.ChatError = void 0;
+const tslib_1 = require("tslib");
+const chatError_1 = tslib_1.__importDefault(require("./chatError"));
+exports.ChatError = chatError_1.default;
+const dadosPessoaisError_1 = tslib_1.__importDefault(require("./dadosPessoaisError"));
+exports.DadosPessoaisError = dadosPessoaisError_1.default;
+const emailError_1 = tslib_1.__importDefault(require("./emailError"));
+exports.EmailError = emailError_1.default;
+const enderecoError_1 = tslib_1.__importDefault(require("./enderecoError"));
+exports.EnderecoError = enderecoError_1.default;
+const perfilError_1 = tslib_1.__importDefault(require("./perfilError"));
+exports.PerfilError = perfilError_1.default;
+const servicoError_1 = tslib_1.__importDefault(require("./servicoError"));
+exports.ServicoError = servicoError_1.default;
+const telefoneError_1 = tslib_1.__importDefault(require("./telefoneError"));
+exports.TelefoneError = telefoneError_1.default;
+const termoBuscaError_1 = tslib_1.__importDefault(require("./termoBuscaError"));
+exports.TermoBuscaError = termoBuscaError_1.default;
+//# sourceMappingURL=index.js.map

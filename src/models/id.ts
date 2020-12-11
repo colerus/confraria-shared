@@ -1,5 +1,8 @@
+import { PrimaryColumn } from "typeorm";
+
 export default class Id {
-  protected id: any;
+  @PrimaryColumn()
+  public id: any;
   definirId(id: any) {
     if (!this.id) this.id = id;
   }

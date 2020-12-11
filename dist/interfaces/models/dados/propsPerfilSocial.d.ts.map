@@ -1,0 +1,1 @@
+{"version":3,"file":"propsPerfilSocial.d.ts","sourceRoot":"","sources":["../../../../src/interfaces/models/dados/propsPerfilSocial.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,aAAa,EAAE,eAAe,EAAE,MAAM,uBAAuB,CAAC;AAEvE,MAAM,CAAC,OAAO,WAAW,iBAAiB;IACxC,EAAE,CAAC,EAAE,MAAM,CAAC;IACZ,KAAK,EAAE,OAAO,CAAC;IACf,MAAM,EAAE,aAAa,GAAG,eAAe,CAAC;CACzC"}

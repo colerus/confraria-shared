@@ -1,0 +1,1 @@
+{"version":3,"file":"foto.js","sourceRoot":"","sources":["../../../src/models/midia/foto.ts"],"names":[],"mappings":";;;AAAA,4DAA4B;AAE5B,8EAA8C;AAC9C,qCAAsC;AAGtC,IAAqB,IAAI,GAAzB,MAAqB,IAAK,SAAQ,eAAK;IACrC,YAAY,KAAiB;QAC3B,KAAK,CAAC,KAAK,EAAE,mBAAS,CAAC,MAAM,CAAC,CAAC;IACjC,CAAC;CACF,CAAA;AAJoB,IAAI;IADxB,qBAAW,CAAC,mBAAS,CAAC,MAAM,CAAC;;GACT,IAAI,CAIxB;kBAJoB,IAAI"}

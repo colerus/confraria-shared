@@ -2,9 +2,12 @@ import Perfil from "./perfil";
 import ServicoPrestado from "./servicoPrestado";
 import PropsPerfilPrestador from "../../interfaces/models/dados/propsPerfilPrestador";
 import TipoPerfil from "../../tipos/tipoPerfil";
+import { ChildEntity, ManyToMany } from "typeorm";
 
+@ChildEntity(TipoPerfil.USUARIO)
 export default class PerfilPrestador extends Perfil {
-  private servicos: ServicoPrestado[];
+  @ManyToMany(() => ServicoPrestado, (servico) => servico.perfis)
+  servicos: ServicoPrestado[];
 
   constructor(perfil: PropsPerfilPrestador) {
     super({ ...perfil, tipoPerfil: TipoPerfil.USUARIO });

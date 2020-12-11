@@ -3,10 +3,14 @@ import EmailValidator from "email-validator";
 import EmailError from "../../exceptions/emailError";
 import Id from "../id";
 import TipoEmail from "../../tipos/tipoEmail";
+import { Entity, Column } from "typeorm";
 
+@Entity("email")
 export default class Email extends Id {
-  private email: string;
-  private tipoEmail: TipoEmail;
+  @Column()
+  email: string;
+  @Column()
+  tipoEmail: TipoEmail;
 
   constructor(dados: PropsEmail) {
     super();

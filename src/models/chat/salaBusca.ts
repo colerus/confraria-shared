@@ -2,10 +2,14 @@ import Id from "../id";
 import Busca from "../busca/busca";
 import Chat from "./chat";
 import PropsSalaBusca from "../../interfaces/models/chat/propsSalaBusca";
+import { Entity, ManyToOne, OneToMany } from "typeorm";
 
+@Entity("sala_busca")
 export default class SalaBusca extends Id {
-  private readonly busca: Busca;
-  private readonly chats: Chat[];
+  @ManyToOne(() => Busca, (busca) => busca.salas)
+  busca: Busca;
+  @OneToMany(() => Chat, (chat) => chat.salaBusca)
+  chats: Chat[];
 
   constructor(props: PropsSalaBusca) {
     super();

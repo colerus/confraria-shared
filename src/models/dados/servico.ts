@@ -1,11 +1,18 @@
 import PropsServico from "../../interfaces/models/dados/propsServico";
 import ServicoError from "../../exceptions/servicoError";
 import Id from "../id";
+import { Column, Entity, ManyToOne, OneToMany } from "typeorm";
 
+@Entity("servico")
 export default class Servico extends Id {
-  private nome: string;
-  private derivacoes?: string[];
-  private parent?: Servico;
+  @Column()
+  nome: string;
+  @Column()
+  derivacoes?: string[];
+  @ManyToOne(() => Servico, (servico) => servico.childs)
+  parent?: Servico;
+  @OneToMany(() => Servico, (servico) => servico.parent)
+  childs?: Servico[];
 
   constructor(servico: PropsServico) {
     super();

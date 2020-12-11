@@ -3,15 +3,25 @@ import TipoOrigem from "../../tipos/tipoOrigem";
 import TipoDadoEstatistico from "../../tipos/tipoDadoEstatistico";
 import PropsDadosEstatisticos from "../../interfaces/models/estatisticas/propsDadosEstatisticos";
 import Id from "../id";
+import { Column, Entity, TableInheritance } from "typeorm";
 
+@Entity("dados_estatisticos")
+@TableInheritance({
+  column: { name: "tipoDadosEstatisticos", type: "varchar" },
+})
 export default class DadosEstatisticos
   extends Id
   implements IDadosEstatisticos {
-  private readonly peso?: number;
-  private readonly data?: Date;
-  private readonly origem?: string;
-  private readonly tipoOrigem?: TipoOrigem;
-  private readonly tipoDadoEstatistico: TipoDadoEstatistico;
+  @Column()
+  peso?: number;
+  @Column()
+  data?: Date;
+  @Column()
+  origem?: string;
+  @Column()
+  tipoOrigem?: TipoOrigem;
+  @Column()
+  tipoDadoEstatistico: TipoDadoEstatistico;
 
   constructor(
     dados: PropsDadosEstatisticos,

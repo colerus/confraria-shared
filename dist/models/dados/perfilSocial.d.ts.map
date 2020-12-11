@@ -1,0 +1,1 @@
+{"version":3,"file":"perfilSocial.d.ts","sourceRoot":"","sources":["../../../src/models/dados/perfilSocial.ts"],"names":[],"mappings":"AACA,OAAO,EAAE,MAAM,EAAE,MAAM,GAAG,CAAC;AAC3B,OAAO,iBAAiB,MAAM,iDAAiD,CAAC;AAChF,OAAO,EAAE,MAAM,OAAO,CAAC;AAGvB,MAAM,CAAC,OAAO,OAAO,YAAa,SAAQ,EAAE;IAI1C,MAAM,EAAE,MAAM,CAAC;gBAEH,KAAK,EAAE,iBAAiB;IAKpC,QAAQ,IAAI,OAAO;CAGpB"}

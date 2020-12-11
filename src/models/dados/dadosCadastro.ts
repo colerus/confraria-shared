@@ -1,13 +1,23 @@
+import { Entity, Column, OneToOne } from "typeorm";
 import { v4 as uuidv4 } from "uuid";
 import PropsDadosCadastro from "../../interfaces/models/dados/propsDadosCadastro";
 import Id from "../id";
+import Perfil from "./perfil";
 
+@Entity("dados_cadastro")
 export default class DadosCadastro extends Id {
-  private dataCadastro: Date;
-  private dataConfirmacao?: Date;
-  private dataEnvioLinkConfirmacao?: Date;
-  private dataGeracaoCodigoConfirmacao?: Date;
-  private codigoConfirmacao?: string;
+  @Column()
+  dataCadastro: Date;
+  @Column()
+  dataConfirmacao?: Date;
+  @Column()
+  dataEnvioLinkConfirmacao?: Date;
+  @Column()
+  dataGeracaoCodigoConfirmacao?: Date;
+  @Column()
+  codigoConfirmacao?: string;
+  @OneToOne(() => Perfil, (perfil) => perfil.dadosPessoais)
+  perfil: Perfil;
 
   constructor(dados: PropsDadosCadastro) {
     super();
@@ -17,6 +27,7 @@ export default class DadosCadastro extends Id {
     this.dataEnvioLinkConfirmacao = dados.dataEnvioLinkConfirmacao;
     this.codigoConfirmacao = dados.codigoConfirmacao;
     this.dataGeracaoCodigoConfirmacao = dados.dataGeracaoCodigoConfirmacao;
+    this.perfil = dados.perfil;
   }
 
   definirId(id: string | undefined) {

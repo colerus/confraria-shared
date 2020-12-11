@@ -3,18 +3,25 @@ import Mensagem from "./mensagem";
 import PropsChat from "../../interfaces/models/chat/propsChat";
 import ChatError from "../../exceptions/chatError";
 import SalaBusca from "./salaBusca";
+import { Entity, OneToMany, ManyToOne, Column } from "typeorm";
+import { PerfilPrestador } from "../dados";
 
+@Entity("chat")
 export default class Chat extends Id {
-  private readonly salaBusca: SalaBusca;
-  private readonly idPrestador: Id;
-  private readonly mensagens?: Mensagem[];
-  private ativo: boolean;
+  @OneToMany(() => SalaBusca, (sala) => sala.chats)
+  salaBusca: SalaBusca;
+  @ManyToOne(() => PerfilPrestador)
+  prestador: PerfilPrestador;
+  @OneToMany(() => Mensagem, (msg) => msg.chat)
+  mensagens?: Mensagem[];
+  @Column()
+  ativo: boolean;
 
   constructor(props: PropsChat) {
     super();
     this.id = props.id;
     this.salaBusca = props.salaBusca;
-    this.idPrestador = props.idPrestador;
+    this.prestador = props.prestador;
     this.mensagens = props.mensagens || [];
     this.ativo = props.ativo || true;
   }
@@ -33,8 +40,8 @@ export default class Chat extends Id {
   obterSalaBusca() {
     return this.salaBusca;
   }
-  obterIdPrestador() {
-    return this.idPrestador;
+  obterPrestador() {
+    return this.prestador;
   }
   obterMensagens() {
     return this.mensagens;

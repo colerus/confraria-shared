@@ -1,0 +1,1 @@
+{"version":3,"file":"propsDadosLogin.d.ts","sourceRoot":"","sources":["../../../../src/interfaces/models/dados/propsDadosLogin.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,aAAa,EAAE,eAAe,EAAE,MAAM,uBAAuB,CAAC;AAEvE,MAAM,CAAC,OAAO,WAAW,eAAe;IACtC,EAAE,CAAC,EAAE,MAAM,CAAC;IACZ,OAAO,EAAE,MAAM,CAAC;IAChB,KAAK,EAAE,MAAM,CAAC;IACd,MAAM,EAAE,aAAa,GAAG,eAAe,CAAC;CACzC"}

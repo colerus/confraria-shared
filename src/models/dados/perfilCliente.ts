@@ -1,7 +1,9 @@
 import Perfil from "./perfil";
 import PropsPerfilCliente from "../../interfaces/models/dados/propsPerfilCliente";
 import TipoPerfil from "../../tipos/tipoPerfil";
+import { ChildEntity } from "typeorm";
 
+@ChildEntity(TipoPerfil.CLIENTE)
 export default class PerfilCliente extends Perfil {
   constructor(perfil: PropsPerfilCliente) {
     super({ ...perfil, tipoPerfil: TipoPerfil.CLIENTE });

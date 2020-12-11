@@ -3,27 +3,32 @@ import Telefone from "./telefone";
 import Email from "./email";
 import PropsDadosPessoais from "../../interfaces/models/dados/propsDadosPessoais";
 import propsDadosPessoais from "../../interfaces/models/dados/propsDadosPessoais";
-import PropsEndereco from "../../interfaces/models/dados/propsEndereco";
-import TipoEndereco from "../../tipos/tipoEndereco";
-import EnderecoError from "../../exceptions/enderecoError";
 import PropsTelefone from "../../interfaces/models/dados/propsTelefone";
 import TelefoneError from "../../exceptions/telefoneError";
-import PropsEmail from "../../interfaces/models/dados/propsEmail";
 import PhoneNumber from "awesome-phonenumber";
 import { calcularIdade } from "../../utils/data";
 import DadosPessoaisError from "../../exceptions/dadosPessoaisError";
 import { converterParaTelefone } from "../../utils/telefone";
-import { converterParaEmail } from "../../utils/email";
-import EmailError from "../../exceptions/emailError";
 import Id from "../id";
+import { Column, Entity, ManyToMany, OneToOne } from "typeorm";
+import Perfil from "./perfil";
 
+@Entity("dados_pessoais")
 export default class DadosPessoais extends Id {
-  private nome: string;
-  private sobrenome: string;
-  private dataNascimento: Date;
-  private enderecos: Endereco[];
-  private telefones: Telefone[];
-  private emails?: Email[];
+  @Column()
+  nome: string;
+  @Column()
+  sobrenome: string;
+  @Column()
+  dataNascimento: Date;
+  @ManyToMany(() => Endereco)
+  enderecos: Endereco[];
+  @ManyToMany(() => Telefone)
+  telefones: Telefone[];
+  @ManyToMany(() => Email)
+  emails?: Email[];
+  @OneToOne(() => Perfil, (perfil) => perfil.dadosPessoais)
+  perfil: Perfil;
 
   constructor(dados: PropsDadosPessoais) {
     super();
@@ -34,6 +39,7 @@ export default class DadosPessoais extends Id {
     this.enderecos = dados.enderecos;
     this.telefones = dados.telefones;
     this.emails = dados.emails;
+    this.perfil = dados.perfil;
   }
 
   alterarId(id?: string) {
@@ -58,37 +64,12 @@ export default class DadosPessoais extends Id {
     this.dataNascimento = dataNascimento;
   }
 
-  adicionarEndereco(
-    endereco: Endereco | PropsEndereco,
-    tipoEndereco?: TipoEndereco
-  ) {
-    endereco =
-      endereco instanceof Endereco
-        ? endereco
-        : new Endereco(endereco, tipoEndereco || TipoEndereco.INDEFINIDO);
-    if (!endereco.isValido()) {
-      throw new EnderecoError("Endereço inválido");
-    }
-    this.enderecos.push(endereco);
-  }
-
   adicionarTelefone(telefone: Telefone | PropsTelefone | string | PhoneNumber) {
     const novo = converterParaTelefone(telefone);
     if (!novo.isValido()) {
       throw new TelefoneError("Telefone Inválido");
     }
     this.telefones.push(novo);
-  }
-
-  adicionarEmail(email: string | Email | PropsEmail) {
-    email = converterParaEmail(email);
-    if (!email.isValido()) {
-      throw new EmailError("E-mail inválido");
-    }
-    if (this.emails === undefined) {
-      this.emails = [];
-    }
-    this.emails.push(email);
   }
 
   removerEndereco(endereco: Endereco) {

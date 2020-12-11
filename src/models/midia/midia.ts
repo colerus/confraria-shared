@@ -1,17 +1,30 @@
+import { Column, TableInheritance } from "typeorm";
+import { Entity } from "typeorm";
 import PropsMidia from "../../interfaces/models/midia/propsMidia";
 import TipoMidia from "../../tipos/tipoMidia";
 import Id from "../id";
 
+@Entity("midia")
+@TableInheritance({ column: { name: "tipoMidia", type: "varchar" } })
 export default class Midia extends Id {
-  private readonly path: string;
-  private readonly nomeOriginal: string;
-  private readonly data: Date;
-  private titulo: string;
-  private descricao: string;
-  private ativo: boolean;
-  private readonly tipoMidia: TipoMidia;
-  private readonly width?: number;
-  private readonly height?: number;
+  @Column()
+  path: string;
+  @Column()
+  nomeOriginal: string;
+  @Column()
+  data: Date;
+  @Column()
+  titulo: string;
+  @Column()
+  descricao: string;
+  @Column()
+  ativo: boolean;
+  @Column()
+  tipoMidia: TipoMidia;
+  @Column()
+  width?: number;
+  @Column()
+  height?: number;
 
   constructor(props: PropsMidia, tipoMidia: TipoMidia) {
     super();

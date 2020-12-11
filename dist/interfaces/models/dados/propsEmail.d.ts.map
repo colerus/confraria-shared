@@ -1,0 +1,1 @@
+{"version":3,"file":"propsEmail.d.ts","sourceRoot":"","sources":["../../../../src/interfaces/models/dados/propsEmail.ts"],"names":[],"mappings":"AAAA,OAAO,SAAS,MAAM,0BAA0B,CAAC;AAEjD,MAAM,CAAC,OAAO,WAAW,UAAU;IAC/B,EAAE,CAAC,EAAE,MAAM,CAAC;IACZ,KAAK,EAAE,MAAM,CAAC;IACd,SAAS,EAAE,SAAS,CAAC;CACxB"}

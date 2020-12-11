@@ -1,0 +1,1 @@
+{"version":3,"file":"pingBusca.d.ts","sourceRoot":"","sources":["../../../src/models/busca/pingBusca.ts"],"names":[],"mappings":"AAEA,OAAO,EAAE,MAAM,OAAO,CAAC;AACvB,OAAO,cAAc,MAAM,8CAA8C,CAAC;AAI1E,MAAM,CAAC,OAAO,OAAO,SAAU,SAAQ,EAAE;IAEvC,KAAK,EAAE,EAAE,CAAC;IAEV,SAAS,EAAE,MAAM,CAAC;gBAEN,KAAK,EAAE,cAAc;IAMjC,SAAS,CAAC,EAAE,CAAC,EAAE,MAAM;CAOtB"}
