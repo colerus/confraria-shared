@@ -5,11 +5,22 @@ import propsTermoBusca from "../../interfaces/models/busca/propsTermoBusca";
 import TermoBuscaError from "../../exceptions/termoBuscaError";
 import PropsTermoBusca from "../../interfaces/models/busca/propsTermoBusca";
 import Id from "../id";
+import { Entity, ManyToOne, OneToMany, Column } from "typeorm";
+import { PingBusca } from ".";
+import { SalaBusca } from "../chat";
 
+@Entity("busca")
 export default class Busca extends Id {
-  private cliente: PerfilCliente;
-  private termos: TermoBusca[];
-  private dataInicio: Date;
+  @ManyToOne((_type) => PerfilCliente, (perfil) => perfil.id)
+  cliente: PerfilCliente;
+  @OneToMany(() => TermoBusca, (termo) => termo.busca)
+  termos: TermoBusca[];
+  @Column()
+  dataInicio: Date;
+  @OneToMany(() => PingBusca, (ping) => ping.busca)
+  pings?: PingBusca[];
+  @OneToMany(() => SalaBusca, (sala) => sala.busca)
+  salas?: SalaBusca[];
 
   constructor(busca: PropsBusca) {
     super();
@@ -17,6 +28,7 @@ export default class Busca extends Id {
     this.cliente = busca.cliente;
     this.termos = busca.termos;
     this.dataInicio = busca.dataInicio || new Date();
+    this.salas = busca.salas;
   }
 
   definirId(id?: string) {
@@ -37,9 +49,9 @@ export default class Busca extends Id {
     }
     const jaExiste = this.termos.filter(
       (tb) =>
-        tb.obterValor().toLowerCase().trim() ===
-          t.obterValor().toLowerCase().trim() &&
-        tb.obterTipoTermo() === t.obterTipoTermo()
+        tb.termo.valor.toLowerCase().trim() ===
+          t.termo.valor.toLowerCase().trim() &&
+        tb.termo.tipoTermo === t.termo.tipoTermo
     );
     if (jaExiste.length > 0) {
       throw new TermoBuscaError("Já existe um termo deste tipo com este valor");
@@ -56,9 +68,9 @@ export default class Busca extends Id {
     }
     const item = this.termos.filter(
       (tb) =>
-        tb.obterValor().toLowerCase().trim() ===
-          t.obterValor().toLowerCase().trim() &&
-        tb.obterTipoTermo() === t.obterTipoTermo()
+        tb.termo.valor.toLowerCase().trim() ===
+          t.termo.valor.toLowerCase().trim() &&
+        tb.termo.tipoTermo === t.termo.tipoTermo
     );
     if (item.length === 1) {
       const index = this.termos.indexOf(item[0]);

@@ -4,10 +4,14 @@ import PropsBusca from "../../interfaces/models/busca/propsBusca";
 import propsTermoBusca from "../../interfaces/models/busca/propsTermoBusca";
 import PropsTermoBusca from "../../interfaces/models/busca/propsTermoBusca";
 import Id from "../id";
+import { PingBusca } from ".";
+import { SalaBusca } from "../chat";
 export default class Busca extends Id {
-    private cliente;
-    private termos;
-    private dataInicio;
+    cliente: PerfilCliente;
+    termos: TermoBusca[];
+    dataInicio: Date;
+    pings?: PingBusca[];
+    salas?: SalaBusca[];
     constructor(busca: PropsBusca);
     definirId(id?: string): void;
     adicionarTermo(termo: TermoBusca | propsTermoBusca): void;

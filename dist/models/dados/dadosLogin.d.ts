@@ -1,11 +1,13 @@
 import TipoLogin from "../../tipos/tipoLogin";
 import PropsDadosLogin from "../../interfaces/models/dados/propsDadosLogin";
 import Id from "../id";
+import { Perfil } from ".";
 export default class DadosLogin extends Id {
-    private tipoLogin;
-    private usuario;
-    private senha;
-    private senhaCriptografada;
+    tipoLogin: TipoLogin;
+    usuario: string;
+    senha: string;
+    senhaCriptografada: boolean;
+    perfil: Perfil;
     constructor(dados: PropsDadosLogin, tipoLogin: TipoLogin);
     definirId(id: string | undefined): void;
     definirSenhaCriptografada(hash: string): void;

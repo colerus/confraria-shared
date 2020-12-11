@@ -7,12 +7,12 @@ import PerfilSocial from "./perfilSocial";
 import PropsPerfil from "../../interfaces/models/dados/propsPerfil";
 import Id from "../id";
 export default class Perfil extends Id {
-    private dadosPessoais;
-    private dadosExibicao;
-    private dadosLogin;
-    private dadosCadastro;
-    private perfisSociais?;
-    private tipoPerfil;
+    dadosPessoais: DadosPessoais;
+    dadosExibicao: DadosExibicao;
+    dadosLogin: DadosLogin[];
+    dadosCadastro: DadosCadastro;
+    perfisSociais?: PerfilSocial[];
+    tipoPerfil: TipoPerfil;
     constructor(dados: PropsPerfil);
     definirId(id: string | undefined): void;
     adicionarDadosLogin(dadosLogin: DadosLogin): void;

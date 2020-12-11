@@ -1,9 +1,10 @@
 import PropsServico from "../../interfaces/models/dados/propsServico";
 import Id from "../id";
 export default class Servico extends Id {
-    private nome;
-    private derivacoes?;
-    private parent?;
+    nome: string;
+    derivacoes?: string[];
+    parent?: Servico;
+    childs?: Servico[];
     constructor(servico: PropsServico);
     definirId(id: string | undefined): void;
     definirParent(parent: Servico): void;

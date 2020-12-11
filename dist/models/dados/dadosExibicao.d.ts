@@ -1,10 +1,12 @@
 import Foto from "../midia/foto";
 import PropsDadosExibicao from "../../interfaces/models/dados/propsDadosExibicao";
 import Id from "../id";
+import Perfil from "./perfil";
 export default class DadosExibicao extends Id {
-    private nomeCurto;
-    private nomeComercial?;
-    private fotoPerfil?;
+    nomeCurto: string;
+    nomeComercial?: string;
+    fotoPerfil?: Foto;
+    perfil: Perfil;
     constructor(dados: PropsDadosExibicao);
     definirId(id: string | undefined): void;
     alterarNomeCurto(nome: string): void;

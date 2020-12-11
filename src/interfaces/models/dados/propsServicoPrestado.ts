@@ -1,3 +1,4 @@
+import { PerfilPrestador } from "../../../models/dados";
 import Servico from "../../../models/dados/servico";
 
 export default interface PropsServicoPrestado {
@@ -5,4 +6,5 @@ export default interface PropsServicoPrestado {
   servico: Servico;
   faixaPrecoInicial: number;
   faixaPrecoFinal: number;
+  perfis: PerfilPrestador[];
 }

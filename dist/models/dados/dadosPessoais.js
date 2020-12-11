@@ -1,17 +1,18 @@
 "use strict";
+var DadosPessoais_1;
 Object.defineProperty(exports, "__esModule", { value: true });
 const tslib_1 = require("tslib");
 const endereco_1 = tslib_1.__importDefault(require("./endereco"));
-const tipoEndereco_1 = tslib_1.__importDefault(require("../../tipos/tipoEndereco"));
-const enderecoError_1 = tslib_1.__importDefault(require("../../exceptions/enderecoError"));
+const telefone_1 = tslib_1.__importDefault(require("./telefone"));
+const email_1 = tslib_1.__importDefault(require("./email"));
 const telefoneError_1 = tslib_1.__importDefault(require("../../exceptions/telefoneError"));
 const data_1 = require("../../utils/data");
 const dadosPessoaisError_1 = tslib_1.__importDefault(require("../../exceptions/dadosPessoaisError"));
-const telefone_1 = require("../../utils/telefone");
-const email_1 = require("../../utils/email");
-const emailError_1 = tslib_1.__importDefault(require("../../exceptions/emailError"));
+const telefone_2 = require("../../utils/telefone");
 const id_1 = tslib_1.__importDefault(require("../id"));
-class DadosPessoais extends id_1.default {
+const typeorm_1 = require("typeorm");
+const perfil_1 = tslib_1.__importDefault(require("./perfil"));
+let DadosPessoais = DadosPessoais_1 = class DadosPessoais extends id_1.default {
     constructor(dados) {
         super();
         this.id = dados.id;
@@ -21,6 +22,7 @@ class DadosPessoais extends id_1.default {
         this.enderecos = dados.enderecos;
         this.telefones = dados.telefones;
         this.emails = dados.emails;
+        this.perfil = dados.perfil;
     }
     alterarId(id) {
         if (this.id === undefined) {
@@ -40,32 +42,12 @@ class DadosPessoais extends id_1.default {
         }
         this.dataNascimento = dataNascimento;
     }
-    adicionarEndereco(endereco, tipoEndereco) {
-        endereco =
-            endereco instanceof endereco_1.default
-                ? endereco
-                : new endereco_1.default(endereco, tipoEndereco || tipoEndereco_1.default.INDEFINIDO);
-        if (!endereco.isValido()) {
-            throw new enderecoError_1.default("Endereço inválido");
-        }
-        this.enderecos.push(endereco);
-    }
     adicionarTelefone(telefone) {
-        const novo = telefone_1.converterParaTelefone(telefone);
+        const novo = telefone_2.converterParaTelefone(telefone);
         if (!novo.isValido()) {
             throw new telefoneError_1.default("Telefone Inválido");
         }
         this.telefones.push(novo);
-    }
-    adicionarEmail(email) {
-        email = email_1.converterParaEmail(email);
-        if (!email.isValido()) {
-            throw new emailError_1.default("E-mail inválido");
-        }
-        if (this.emails === undefined) {
-            this.emails = [];
-        }
-        this.emails.push(email);
     }
     removerEndereco(endereco) {
         const index = this.enderecos.indexOf(endereco);
@@ -110,9 +92,9 @@ class DadosPessoais extends id_1.default {
         return this.emails;
     }
     static validar(dadosPessoais) {
-        return dadosPessoais instanceof DadosPessoais
+        return dadosPessoais instanceof DadosPessoais_1
             ? dadosPessoais.isValido()
-            : new DadosPessoais(dadosPessoais).isValido();
+            : new DadosPessoais_1(dadosPessoais).isValido();
     }
     isValido() {
         return (this.isNomeCompletoValido() &&
@@ -148,6 +130,38 @@ class DadosPessoais extends id_1.default {
             ? this.telefones.every((current) => current.isValido())
             : false;
     }
-}
+};
+tslib_1.__decorate([
+    typeorm_1.Column(),
+    tslib_1.__metadata("design:type", String)
+], DadosPessoais.prototype, "nome", void 0);
+tslib_1.__decorate([
+    typeorm_1.Column(),
+    tslib_1.__metadata("design:type", String)
+], DadosPessoais.prototype, "sobrenome", void 0);
+tslib_1.__decorate([
+    typeorm_1.Column(),
+    tslib_1.__metadata("design:type", Date)
+], DadosPessoais.prototype, "dataNascimento", void 0);
+tslib_1.__decorate([
+    typeorm_1.ManyToMany(() => endereco_1.default),
+    tslib_1.__metadata("design:type", Array)
+], DadosPessoais.prototype, "enderecos", void 0);
+tslib_1.__decorate([
+    typeorm_1.ManyToMany(() => telefone_1.default),
+    tslib_1.__metadata("design:type", Array)
+], DadosPessoais.prototype, "telefones", void 0);
+tslib_1.__decorate([
+    typeorm_1.ManyToMany(() => email_1.default),
+    tslib_1.__metadata("design:type", Array)
+], DadosPessoais.prototype, "emails", void 0);
+tslib_1.__decorate([
+    typeorm_1.OneToOne(() => perfil_1.default, (perfil) => perfil.dadosPessoais),
+    tslib_1.__metadata("design:type", perfil_1.default)
+], DadosPessoais.prototype, "perfil", void 0);
+DadosPessoais = DadosPessoais_1 = tslib_1.__decorate([
+    typeorm_1.Entity("dados_pessoais"),
+    tslib_1.__metadata("design:paramtypes", [Object])
+], DadosPessoais);
 exports.default = DadosPessoais;
 //# sourceMappingURL=dadosPessoais.js.map

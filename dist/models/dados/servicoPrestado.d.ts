@@ -1,10 +1,12 @@
 import Servico from "./servico";
 import PropsServicoPrestado from "../../interfaces/models/dados/propsServicoPrestado";
 import Id from "../id";
+import { PerfilPrestador } from ".";
 export default class ServicoPrestado extends Id {
-    private servico;
-    private faixaPrecoInicial;
-    private faixaPrecoFinal;
+    servico: Servico;
+    faixaPrecoInicial: number;
+    faixaPrecoFinal: number;
+    perfis: PerfilPrestador[];
     constructor(servico: PropsServicoPrestado);
     definirId(id: string | undefined): void;
     alterarFaixaPrecoInicial(valor: number): void;

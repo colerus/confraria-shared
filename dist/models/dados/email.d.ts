@@ -2,8 +2,8 @@ import PropsEmail from "../../interfaces/models/dados/propsEmail";
 import Id from "../id";
 import TipoEmail from "../../tipos/tipoEmail";
 export default class Email extends Id {
-    private email;
-    private tipoEmail;
+    email: string;
+    tipoEmail: TipoEmail;
     constructor(dados: PropsEmail);
     alterarId(id?: string): void;
     alterarEmail(email: string): void;

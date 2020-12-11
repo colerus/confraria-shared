@@ -1,3 +1,4 @@
+import { PerfilCliente, PerfilPrestador } from "../../../models/dados";
 import Foto from "../../../models/midia/foto";
 
 export default interface PropsDadosExibicao {
@@ -5,4 +6,5 @@ export default interface PropsDadosExibicao {
   nomeCurto: string;
   nomeComercial?: string;
   fotoPerfil?: Foto;
+  perfil: PerfilCliente | PerfilPrestador;
 }

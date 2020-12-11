@@ -1,11 +1,19 @@
 import Servico from "./servico";
 import PropsServicoPrestado from "../../interfaces/models/dados/propsServicoPrestado";
 import Id from "../id";
+import { Column, Entity, ManyToMany, ManyToOne } from "typeorm";
+import { PerfilPrestador } from ".";
 
+@Entity("servico_prestado")
 export default class ServicoPrestado extends Id {
-  private servico: Servico;
-  private faixaPrecoInicial: number;
-  private faixaPrecoFinal: number;
+  @ManyToOne(() => Servico)
+  servico: Servico;
+  @Column()
+  faixaPrecoInicial: number;
+  @Column()
+  faixaPrecoFinal: number;
+  @ManyToMany(() => PerfilPrestador, (perfil) => perfil.servicos)
+  perfis: PerfilPrestador[];
 
   constructor(servico: PropsServicoPrestado) {
     super();
@@ -13,6 +21,7 @@ export default class ServicoPrestado extends Id {
     this.servico = servico.servico;
     this.faixaPrecoInicial = servico.faixaPrecoInicial;
     this.faixaPrecoFinal = servico.faixaPrecoFinal;
+    this.perfis = servico.perfis;
   }
 
   definirId(id: string | undefined) {

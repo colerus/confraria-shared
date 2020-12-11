@@ -1,11 +1,13 @@
 import PropsDadosCadastro from "../../interfaces/models/dados/propsDadosCadastro";
 import Id from "../id";
+import Perfil from "./perfil";
 export default class DadosCadastro extends Id {
-    private dataCadastro;
-    private dataConfirmacao?;
-    private dataEnvioLinkConfirmacao?;
-    private dataGeracaoCodigoConfirmacao?;
-    private codigoConfirmacao?;
+    dataCadastro: Date;
+    dataConfirmacao?: Date;
+    dataEnvioLinkConfirmacao?: Date;
+    dataGeracaoCodigoConfirmacao?: Date;
+    codigoConfirmacao?: string;
+    perfil: Perfil;
     constructor(dados: PropsDadosCadastro);
     definirId(id: string | undefined): void;
     definirDataConfirmacao(data: Date | undefined): void;

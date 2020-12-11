@@ -1,11 +1,19 @@
 import Foto from "../midia/foto";
 import PropsDadosExibicao from "../../interfaces/models/dados/propsDadosExibicao";
 import Id from "../id";
+import { Column, Entity, OneToOne } from "typeorm";
+import Perfil from "./perfil";
 
+@Entity("dados_exibicao")
 export default class DadosExibicao extends Id {
-  private nomeCurto: string;
-  private nomeComercial?: string;
-  private fotoPerfil?: Foto;
+  @Column()
+  nomeCurto: string;
+  @Column()
+  nomeComercial?: string;
+  @OneToOne(() => Foto)
+  fotoPerfil?: Foto;
+  @OneToOne(() => Perfil, (perfil) => perfil.dadosPessoais)
+  perfil: Perfil;
 
   constructor(dados: PropsDadosExibicao) {
     super();
@@ -13,6 +21,7 @@ export default class DadosExibicao extends Id {
     this.nomeCurto = dados.nomeCurto;
     this.nomeComercial = dados.nomeComercial;
     this.fotoPerfil = dados.fotoPerfil;
+    this.perfil = dados.perfil;
   }
 
   definirId(id: string | undefined) {

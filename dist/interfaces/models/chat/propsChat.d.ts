@@ -1,10 +1,10 @@
 import Mensagem from "../../../models/chat/mensagem";
 import SalaBusca from "../../../models/chat/salaBusca";
-import Id from "../../../models/id";
+import { PerfilPrestador } from "../../../models/dados";
 export default interface PropsChat {
     id?: string;
     salaBusca: SalaBusca;
-    idPrestador: Id;
+    prestador: PerfilPrestador;
     mensagens?: Mensagem[];
     ativo?: boolean;
 }

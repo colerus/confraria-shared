@@ -1,5 +1,5 @@
 export default class Id {
-    protected id: any;
+    id: any;
     definirId(id: any): void;
     obterId(): any;
 }

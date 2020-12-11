@@ -2,18 +2,30 @@ import PropsEndereco from "../../interfaces/models/dados/propsEndereco";
 import TipoEndereco from "../../tipos/tipoEndereco";
 import propsEndereco from "../../interfaces/models/dados/propsEndereco";
 import Id from "../id";
+import { Column, Entity } from "typeorm";
 
+@Entity("endereco")
 export default class Endereco extends Id {
-  private tipoLogradouro: string;
-  private logradouro: string;
-  private numero?: number;
-  private complemento?: string;
-  private codigoPostal?: string;
-  private cidade: string;
-  private estado: string;
-  private pais: string;
-  private referencia?: string;
-  private tipoEndereco: TipoEndereco;
+  @Column()
+  tipoLogradouro: string;
+  @Column()
+  logradouro: string;
+  @Column()
+  numero?: number;
+  @Column()
+  complemento?: string;
+  @Column()
+  codigoPostal?: string;
+  @Column()
+  cidade: string;
+  @Column()
+  estado: string;
+  @Column()
+  pais: string;
+  @Column()
+  referencia?: string;
+  @Column()
+  tipoEndereco: TipoEndereco;
 
   constructor(dados: PropsEndereco, tipoEndereco: TipoEndereco) {
     super();

@@ -7,14 +7,23 @@ import PerfilSocial from "./perfilSocial";
 import PropsPerfil from "../../interfaces/models/dados/propsPerfil";
 import PerfilError from "../../exceptions/perfilError";
 import Id from "../id";
+import { Entity, OneToOne, OneToMany, Column, TableInheritance } from "typeorm";
 
+@Entity("perfil")
+@TableInheritance({ column: { name: "tipoPerfil", type: "varchar" } })
 export default class Perfil extends Id {
-  private dadosPessoais: DadosPessoais;
-  private dadosExibicao: DadosExibicao;
-  private dadosLogin: DadosLogin[];
-  private dadosCadastro: DadosCadastro;
-  private perfisSociais?: PerfilSocial[];
-  private tipoPerfil: TipoPerfil;
+  @OneToOne(() => DadosPessoais, (dados) => dados.perfil)
+  dadosPessoais: DadosPessoais;
+  @OneToOne(() => DadosExibicao, (dados) => dados.perfil)
+  dadosExibicao: DadosExibicao;
+  @OneToMany(() => DadosLogin, (login) => login.perfil)
+  dadosLogin: DadosLogin[];
+  @OneToOne(() => DadosCadastro, (dados) => dados.perfil)
+  dadosCadastro: DadosCadastro;
+  @OneToMany(() => PerfilSocial, (perfil) => perfil.perfil)
+  perfisSociais?: PerfilSocial[];
+  @Column()
+  tipoPerfil: TipoPerfil;
 
   constructor(dados: PropsPerfil) {
     super();

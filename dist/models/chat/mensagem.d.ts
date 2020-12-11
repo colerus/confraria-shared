@@ -4,11 +4,11 @@ import TipoOrigemMensagem from "../../tipos/tipoOrigemMensagem";
 import StatusMensagem from "../../tipos/statusMensagem";
 import PropsMensagem from "../../interfaces/models/chat/propsMensagem";
 export default class Mensagem extends Id {
-    private readonly chat;
-    private readonly tipoOrigemMensagem;
-    private readonly mensagem;
-    private readonly timestamp;
-    private status;
+    chat: Chat;
+    tipoOrigemMensagem: TipoOrigemMensagem;
+    mensagem: string;
+    timestamp: number;
+    status: StatusMensagem;
     constructor(props: PropsMensagem);
     alterarStatus(status: StatusMensagem): void;
     obterChat(): Chat;

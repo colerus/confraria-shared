@@ -1,9 +1,11 @@
 "use strict";
+var Endereco_1;
 Object.defineProperty(exports, "__esModule", { value: true });
 const tslib_1 = require("tslib");
 const tipoEndereco_1 = tslib_1.__importDefault(require("../../tipos/tipoEndereco"));
 const id_1 = tslib_1.__importDefault(require("../id"));
-class Endereco extends id_1.default {
+const typeorm_1 = require("typeorm");
+let Endereco = Endereco_1 = class Endereco extends id_1.default {
     constructor(dados, tipoEndereco) {
         super();
         this.id = dados.id;
@@ -87,9 +89,9 @@ class Endereco extends id_1.default {
         return this.tipoEndereco;
     }
     static validar(endereco) {
-        return endereco instanceof Endereco
+        return endereco instanceof Endereco_1
             ? endereco.isValido()
-            : new Endereco(endereco, tipoEndereco_1.default.INDEFINIDO).isValido();
+            : new Endereco_1(endereco, tipoEndereco_1.default.INDEFINIDO).isValido();
     }
     isValido() {
         return (this.isLogradouroValido() &&
@@ -109,6 +111,50 @@ class Endereco extends id_1.default {
     isPaisValido() {
         return this.pais.length >= 2;
     }
-}
+};
+tslib_1.__decorate([
+    typeorm_1.Column(),
+    tslib_1.__metadata("design:type", String)
+], Endereco.prototype, "tipoLogradouro", void 0);
+tslib_1.__decorate([
+    typeorm_1.Column(),
+    tslib_1.__metadata("design:type", String)
+], Endereco.prototype, "logradouro", void 0);
+tslib_1.__decorate([
+    typeorm_1.Column(),
+    tslib_1.__metadata("design:type", Number)
+], Endereco.prototype, "numero", void 0);
+tslib_1.__decorate([
+    typeorm_1.Column(),
+    tslib_1.__metadata("design:type", String)
+], Endereco.prototype, "complemento", void 0);
+tslib_1.__decorate([
+    typeorm_1.Column(),
+    tslib_1.__metadata("design:type", String)
+], Endereco.prototype, "codigoPostal", void 0);
+tslib_1.__decorate([
+    typeorm_1.Column(),
+    tslib_1.__metadata("design:type", String)
+], Endereco.prototype, "cidade", void 0);
+tslib_1.__decorate([
+    typeorm_1.Column(),
+    tslib_1.__metadata("design:type", String)
+], Endereco.prototype, "estado", void 0);
+tslib_1.__decorate([
+    typeorm_1.Column(),
+    tslib_1.__metadata("design:type", String)
+], Endereco.prototype, "pais", void 0);
+tslib_1.__decorate([
+    typeorm_1.Column(),
+    tslib_1.__metadata("design:type", String)
+], Endereco.prototype, "referencia", void 0);
+tslib_1.__decorate([
+    typeorm_1.Column(),
+    tslib_1.__metadata("design:type", Number)
+], Endereco.prototype, "tipoEndereco", void 0);
+Endereco = Endereco_1 = tslib_1.__decorate([
+    typeorm_1.Entity("endereco"),
+    tslib_1.__metadata("design:paramtypes", [Object, Number])
+], Endereco);
 exports.default = Endereco;
 //# sourceMappingURL=endereco.js.map

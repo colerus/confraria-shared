@@ -1,14 +1,20 @@
+import { Column, ManyToOne } from "typeorm";
+import { Entity } from "typeorm";
 import Id from "../id";
 import PropsPingBusca from "../../interfaces/models/busca/propsPingBusca";
+import Busca from "./busca";
 
+@Entity("ping_busca")
 export default class PingBusca extends Id {
-  private idBusca: Id;
-  private timestamp: number;
+  @ManyToOne(() => Busca, (busca) => busca.pings)
+  busca: Id;
+  @Column()
+  timestamp: number;
 
   constructor(props: PropsPingBusca) {
     super();
     this.id = props.id;
-    this.idBusca = props.idbusca;
+    this.busca = props.busca;
     this.timestamp = props.timestamp;
   }
   definirId(id?: string) {
@@ -17,16 +23,5 @@ export default class PingBusca extends Id {
       return true;
     }
     return false;
-  }
-  definirIdBusca(id: Id) {
-    if (this.idBusca === undefined) {
-      this.idBusca = id;
-    }
-  }
-  obterIdBusca() {
-    return this.idBusca;
-  }
-  obterTimestamp() {
-    return this.timestamp;
   }
 }

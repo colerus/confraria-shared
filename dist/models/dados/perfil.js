@@ -1,10 +1,17 @@
 "use strict";
+var Perfil_1;
 Object.defineProperty(exports, "__esModule", { value: true });
 const tslib_1 = require("tslib");
 const tipoPerfil_1 = tslib_1.__importDefault(require("../../tipos/tipoPerfil"));
+const dadosPessoais_1 = tslib_1.__importDefault(require("./dadosPessoais"));
+const dadosExibicao_1 = tslib_1.__importDefault(require("./dadosExibicao"));
+const dadosLogin_1 = tslib_1.__importDefault(require("./dadosLogin"));
+const dadosCadastro_1 = tslib_1.__importDefault(require("./dadosCadastro"));
+const perfilSocial_1 = tslib_1.__importDefault(require("./perfilSocial"));
 const perfilError_1 = tslib_1.__importDefault(require("../../exceptions/perfilError"));
 const id_1 = tslib_1.__importDefault(require("../id"));
-class Perfil extends id_1.default {
+const typeorm_1 = require("typeorm");
+let Perfil = Perfil_1 = class Perfil extends id_1.default {
     constructor(dados) {
         super();
         this.id = dados.id;
@@ -70,9 +77,9 @@ class Perfil extends id_1.default {
         return this.tipoPerfil;
     }
     static validar(perfil) {
-        return perfil instanceof Perfil
+        return perfil instanceof Perfil_1
             ? perfil.isValido()
-            : new Perfil(perfil).isValido();
+            : new Perfil_1(perfil).isValido();
     }
     isValido() {
         return (this.isTipoPerfilValido() &&
@@ -103,6 +110,35 @@ class Perfil extends id_1.default {
             ? this.perfisSociais.every((current) => current.isValido())
             : true;
     }
-}
+};
+tslib_1.__decorate([
+    typeorm_1.OneToOne(() => dadosPessoais_1.default, (dados) => dados.perfil),
+    tslib_1.__metadata("design:type", dadosPessoais_1.default)
+], Perfil.prototype, "dadosPessoais", void 0);
+tslib_1.__decorate([
+    typeorm_1.OneToOne(() => dadosExibicao_1.default, (dados) => dados.perfil),
+    tslib_1.__metadata("design:type", dadosExibicao_1.default)
+], Perfil.prototype, "dadosExibicao", void 0);
+tslib_1.__decorate([
+    typeorm_1.OneToMany(() => dadosLogin_1.default, (login) => login.perfil),
+    tslib_1.__metadata("design:type", Array)
+], Perfil.prototype, "dadosLogin", void 0);
+tslib_1.__decorate([
+    typeorm_1.OneToOne(() => dadosCadastro_1.default, (dados) => dados.perfil),
+    tslib_1.__metadata("design:type", dadosCadastro_1.default)
+], Perfil.prototype, "dadosCadastro", void 0);
+tslib_1.__decorate([
+    typeorm_1.OneToMany(() => perfilSocial_1.default, (perfil) => perfil.perfil),
+    tslib_1.__metadata("design:type", Array)
+], Perfil.prototype, "perfisSociais", void 0);
+tslib_1.__decorate([
+    typeorm_1.Column(),
+    tslib_1.__metadata("design:type", Number)
+], Perfil.prototype, "tipoPerfil", void 0);
+Perfil = Perfil_1 = tslib_1.__decorate([
+    typeorm_1.Entity("perfil"),
+    typeorm_1.TableInheritance({ column: { name: "tipoPerfil", type: "varchar" } }),
+    tslib_1.__metadata("design:paramtypes", [Object])
+], Perfil);
 exports.default = Perfil;
 //# sourceMappingURL=perfil.js.map

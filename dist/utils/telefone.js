@@ -6,13 +6,14 @@ const telefone_1 = tslib_1.__importDefault(require("../models/dados/telefone"));
 const awesome_phonenumber_1 = tslib_1.__importDefault(require("awesome-phonenumber"));
 const tipoTelefone_1 = tslib_1.__importDefault(require("../tipos/tipoTelefone"));
 const tipoFuncaoTelefone_1 = tslib_1.__importDefault(require("../tipos/tipoFuncaoTelefone"));
-exports.validarTelefone = (telefone) => {
+const validarTelefone = (telefone) => {
     if (!(telefone instanceof awesome_phonenumber_1.default)) {
         return exports.converterParaPhoneNumber(telefone).isValid();
     }
     return telefone.isValid();
 };
-exports.converterParaPhoneNumber = (telefone) => {
+exports.validarTelefone = validarTelefone;
+const converterParaPhoneNumber = (telefone) => {
     if (telefone instanceof awesome_phonenumber_1.default) {
         return telefone;
     }
@@ -23,7 +24,8 @@ exports.converterParaPhoneNumber = (telefone) => {
     const tel = new telefone_1.default(telefone);
     return exports.converterParaPhoneNumber(tel);
 };
-exports.converterParaTelefone = (telefone) => {
+exports.converterParaPhoneNumber = converterParaPhoneNumber;
+const converterParaTelefone = (telefone) => {
     if (telefone instanceof telefone_1.default) {
         return telefone;
     }
@@ -36,4 +38,5 @@ exports.converterParaTelefone = (telefone) => {
     };
     return new telefone_1.default(dadosTelefone);
 };
+exports.converterParaTelefone = converterParaTelefone;
 //# sourceMappingURL=telefone.js.map

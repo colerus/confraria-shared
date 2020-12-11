@@ -4,7 +4,7 @@ exports.converterParaEmail = void 0;
 const tslib_1 = require("tslib");
 const email_1 = tslib_1.__importDefault(require("../models/dados/email"));
 const tipoEmail_1 = tslib_1.__importDefault(require("../tipos/tipoEmail"));
-exports.converterParaEmail = (email, tipoEmail) => {
+const converterParaEmail = (email, tipoEmail) => {
     if (email instanceof email_1.default) {
         return email;
     }
@@ -20,4 +20,5 @@ exports.converterParaEmail = (email, tipoEmail) => {
     }
     return mail;
 };
+exports.converterParaEmail = converterParaEmail;
 //# sourceMappingURL=email.js.map

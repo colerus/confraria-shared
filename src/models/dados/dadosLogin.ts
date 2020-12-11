@@ -4,12 +4,21 @@ import Generator from "generate-password";
 import { BCRYPT_SALT } from "../../config";
 import Id from "../id";
 import { encriptar } from "../../utils/crypto";
+import { Entity, Column, OneToMany } from "typeorm";
+import { Perfil } from ".";
 
+@Entity("dados_login")
 export default class DadosLogin extends Id {
-  private tipoLogin: TipoLogin;
-  private usuario: string;
-  private senha: string;
-  private senhaCriptografada: boolean;
+  @Column()
+  tipoLogin: TipoLogin;
+  @Column()
+  usuario: string;
+  @Column()
+  senha: string;
+  @Column()
+  senhaCriptografada: boolean;
+  @OneToMany(() => Perfil, (perfil) => perfil.dadosLogin)
+  perfil: Perfil;
 
   constructor(dados: PropsDadosLogin, tipoLogin: TipoLogin) {
     super();
@@ -18,6 +27,7 @@ export default class DadosLogin extends Id {
     this.usuario = dados.usuario;
     this.senha = dados.senha;
     this.senhaCriptografada = false;
+    this.perfil = dados.perfil;
   }
 
   definirId(id: string | undefined) {

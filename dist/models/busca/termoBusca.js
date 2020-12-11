@@ -1,15 +1,19 @@
 "use strict";
+var TermoBusca_1;
 Object.defineProperty(exports, "__esModule", { value: true });
 const tslib_1 = require("tslib");
+const typeorm_1 = require("typeorm");
+const tipoOperacaoTermoBusca_1 = tslib_1.__importDefault(require("../../tipos/tipoOperacaoTermoBusca"));
 const id_1 = tslib_1.__importDefault(require("../id"));
-class TermoBusca extends id_1.default {
+const busca_1 = tslib_1.__importDefault(require("./busca"));
+const termo_1 = tslib_1.__importDefault(require("./termo"));
+let TermoBusca = TermoBusca_1 = class TermoBusca extends id_1.default {
     constructor(termo) {
         super();
         this.id = termo.id;
         this.busca = termo.busca;
-        this.tipoTermo = termo.tipoTermo;
         this.tipoOperacao = termo.tipoOperacao;
-        this.valor = termo.valor;
+        this.termo = termo.termo;
     }
     definirId(id) {
         if (this.id === undefined) {
@@ -21,14 +25,8 @@ class TermoBusca extends id_1.default {
             this.busca = busca;
         }
     }
-    alterarTipoTermo(tipo) {
-        this.tipoTermo = tipo;
-    }
     alterarTipoOperacao(tipo) {
         this.tipoOperacao = tipo;
-    }
-    alterarValor(valor) {
-        this.valor = valor;
     }
     obterId() {
         return this.id;
@@ -36,29 +34,39 @@ class TermoBusca extends id_1.default {
     obterBusca() {
         return this.busca;
     }
-    obterTipoTermo() {
-        return this.tipoTermo;
-    }
     obterTipoOperacao() {
         return this.tipoOperacao;
     }
-    obterValor() {
-        return this.valor;
-    }
     static validar(termo) {
         let valido;
-        if (termo instanceof TermoBusca) {
-            valido = termo.obterValor().trim().length >= 3;
+        if (termo instanceof TermoBusca_1) {
+            valido = termo.termo.valor.trim().length >= 3;
         }
         else {
-            const temp = new TermoBusca(termo);
+            const temp = new TermoBusca_1(termo);
             valido = temp.isValido();
         }
         return valido;
     }
     isValido() {
-        return TermoBusca.validar(this);
+        return TermoBusca_1.validar(this);
     }
-}
+};
+tslib_1.__decorate([
+    typeorm_1.ManyToOne(() => busca_1.default, (busca) => busca.termos),
+    tslib_1.__metadata("design:type", busca_1.default)
+], TermoBusca.prototype, "busca", void 0);
+tslib_1.__decorate([
+    typeorm_1.Column(),
+    tslib_1.__metadata("design:type", Number)
+], TermoBusca.prototype, "tipoOperacao", void 0);
+tslib_1.__decorate([
+    typeorm_1.ManyToOne(() => termo_1.default, (termo) => termo.termoBuscas),
+    tslib_1.__metadata("design:type", termo_1.default)
+], TermoBusca.prototype, "termo", void 0);
+TermoBusca = TermoBusca_1 = tslib_1.__decorate([
+    typeorm_1.Entity("termo_busca"),
+    tslib_1.__metadata("design:paramtypes", [Object])
+], TermoBusca);
 exports.default = TermoBusca;
 //# sourceMappingURL=termoBusca.js.map

@@ -2,9 +2,16 @@
   "name": "confraria-shared",
   "version": "1.0.0",
   "description": "Definições compartilhadas entre os módulos",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "types": "dist/index.d.js",
   "scripts": {
-    "test": "echo 'No tests implemented yet'. && exit 0"
+    "build": "tsc",
+    "test": "echo 'No tests implemented yet'. && exit 0",
+    "prepare": "npm run build",
+    "_dist:nopublish": "echo 'Use `npm run dist` instead of `npm publish`!' && exit 1",
+    "_dist:prep": "npm run build && copy package.json dist ",
+    "_dist:post": "del .\\dist\\package.json",
+    "dist": "npm run _dist:prep && yalc publish dist && npm run _dist:post"
   },
   "author": "Iuri Neumann",
   "license": "ISC",
@@ -21,6 +28,13 @@
     "dotenv": "^8.2.0",
     "email-validator": "^2.0.4",
     "generate-password": "^1.5.1",
+    "typeorm": "^0.2.29",
     "uuid": "^8.3.2"
-  }
+  },
+  "files": [
+    "dist/**/*.js",
+    "dist/**/*.d.ts",
+    "index*.js",
+    "index.d.ts"
+  ]
 }
