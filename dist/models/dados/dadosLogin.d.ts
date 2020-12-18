@@ -18,9 +18,6 @@ export default class DadosLogin extends Id {
     obterSenha(): string;
     gerarNovaSenha(): void;
     encriptarSenha(): Promise<string>;
-    static validar(dados: DadosLogin | PropsDadosLogin, tipoLogin: TipoLogin): boolean;
-    private static validarDadosLogin;
-    private static validarPropsDadosLogin;
     isValido(): boolean;
     private tipoLoginValido;
     private usuarioValido;

@@ -1,7 +1,7 @@
-import Id from "../../../models/id";
+import PropsId from "../propsId";
+import Busca from "../../../models/busca/busca";
 
-export default interface PropsPingBusca {
-  id?: Id;
-  busca: Id;
+export default interface PropsPingBusca extends PropsId {
+  busca: Busca;
   timestamp: number;
 }

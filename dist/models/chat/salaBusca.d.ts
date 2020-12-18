@@ -9,5 +9,6 @@ export default class SalaBusca extends Id {
     adicionarChat(chat: Chat): void;
     obterBusca(): Busca;
     obterChats(): Chat[];
+    isValido(): boolean;
 }
 //# sourceMappingURL=salaBusca.d.ts.map

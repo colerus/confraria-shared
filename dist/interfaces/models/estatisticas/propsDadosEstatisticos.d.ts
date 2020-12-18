@@ -1,6 +1,6 @@
 import TipoOrigem from "../../../tipos/tipoOrigem";
-export default interface PropsDadosEstatisticos {
-    id?: string;
+import PropsId from "../propsId";
+export default interface PropsDadosEstatisticos extends PropsId {
     peso?: number;
     data?: Date;
     origem?: string;

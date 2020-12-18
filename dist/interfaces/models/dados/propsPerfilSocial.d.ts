@@ -1,6 +1,6 @@
 import { PerfilCliente, PerfilPrestador } from "../../../models/dados";
-export default interface PropsPerfilSocial {
-    id?: string;
+import PropsId from "../propsId";
+export default interface PropsPerfilSocial extends PropsId {
     ativo: boolean;
     perfil: PerfilCliente | PerfilPrestador;
 }

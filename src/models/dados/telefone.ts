@@ -8,28 +8,18 @@ import {
 } from "../../utils/telefone";
 import TelefoneError from "../../exceptions/telefoneError";
 import Id from "../id";
-import { Column, Entity } from "typeorm";
 
-@Entity("telefone")
 export default class Telefone extends Id {
-  @Column()
   codigoPais: number;
-  @Column()
   codigoArea?: number;
-  @Column()
   numero: string;
-  @Column()
   ramal?: string;
-  @Column()
   tipoTelefone: TipoTelefone;
-  @Column()
   tipoFuncao: TipoFuncaoTelefone;
-  @Column()
   whatsapp: boolean;
 
   constructor(dados: PropsTelefone) {
-    super();
-    this.id = dados.id;
+    super(dados);
     this.codigoPais = dados.codigoPais;
     this.codigoArea = dados.codigoArea;
     this.numero = dados.numero;

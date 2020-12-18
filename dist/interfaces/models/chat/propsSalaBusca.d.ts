@@ -1,7 +1,7 @@
 import Busca from "../../../models/busca/busca";
 import Chat from "../../../models/chat/chat";
-export default interface PropsSalaBusca {
-    id?: string;
+import PropsId from "../propsId";
+export default interface PropsSalaBusca extends PropsId {
     busca: Busca;
     chats?: Chat[];
 }

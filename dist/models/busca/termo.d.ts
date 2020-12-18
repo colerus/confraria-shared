@@ -7,5 +7,6 @@ export default class Termo extends Id {
     valor: string;
     termoBuscas: TermoBusca[];
     constructor(termo: PropsTermo);
+    isValido(): boolean;
 }
 //# sourceMappingURL=termo.d.ts.map

@@ -1,5 +1,5 @@
-export default interface PropsMidia {
-    id?: string;
+import PropsId from "../propsId";
+export default interface PropsMidia extends PropsId {
     path: string;
     nomeOriginal?: string;
     data?: Date;

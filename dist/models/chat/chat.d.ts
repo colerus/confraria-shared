@@ -16,5 +16,6 @@ export default class Chat extends Id {
     obterPrestador(): PerfilPrestador;
     obterMensagens(): Mensagem[] | undefined;
     isAtivo(): boolean;
+    isValido(): boolean;
 }
 //# sourceMappingURL=chat.d.ts.map

@@ -16,5 +16,6 @@ export default class Mensagem extends Id {
     obterMensagem(): string;
     obterTimestamp(): number;
     obterStatus(): StatusMensagem;
+    isValido(): boolean;
 }
 //# sourceMappingURL=mensagem.d.ts.map

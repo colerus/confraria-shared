@@ -11,5 +11,6 @@ import TipoOrigemMensagem from "./tipoOrigemMensagem";
 import TipoPerfil from "./tipoPerfil";
 import TipoTelefone from "./tipoTelefone";
 import TipoTermoBusca from "./tipoTermoBusca";
-export { StatusMensagem, TipoDadoEstatistico, TipoEmail, TipoEndereco, TipoFuncaoTelefone, TipoLogin, TipoMidia, TipoOperacaoTermoBusca, TipoOrigem, TipoOrigemMensagem, TipoPerfil, TipoTelefone, TipoTermoBusca, };
+import TipoLogradouro from "./tipoLogradouro";
+export { StatusMensagem, TipoDadoEstatistico, TipoEmail, TipoEndereco, TipoFuncaoTelefone, TipoLogin, TipoLogradouro, TipoMidia, TipoOperacaoTermoBusca, TipoOrigem, TipoOrigemMensagem, TipoPerfil, TipoTelefone, TipoTermoBusca, };
 //# sourceMappingURL=index.d.ts.map

@@ -5,5 +5,6 @@ export default class Exibicao extends DadosEstatisticos {
     referencia?: string;
     constructor(dados: PropsDadosEstatisticos | PropsDadosEstatisticosExibicao);
     ObterReferencia(): string | undefined;
+    isValido(): boolean;
 }
 //# sourceMappingURL=exibicao.d.ts.map

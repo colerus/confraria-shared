@@ -6,5 +6,6 @@ export default class Video extends Midia {
     constructor(dados: PropsVideo | PropsMidia);
     alterarDuracao(duracao?: number): void;
     obterDuracao(): number | undefined;
+    isValido(): boolean;
 }
 //# sourceMappingURL=video.d.ts.map

@@ -7,5 +7,6 @@ export default class Clique extends DadosEstatisticos {
     constructor(dados: PropsDadosEstatisticos | PropsDadosEstatisticosClique);
     obterX(): number | undefined;
     obterY(): number | undefined;
+    isValido(): boolean;
 }
 //# sourceMappingURL=clique.d.ts.map

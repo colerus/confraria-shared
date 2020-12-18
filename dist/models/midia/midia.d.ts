@@ -27,5 +27,6 @@ export default class Midia extends Id {
     obterWisth(): number | undefined;
     obterHeight(): number | undefined;
     obterTipoMidia(): TipoMidia;
+    isValido(): boolean;
 }
 //# sourceMappingURL=midia.d.ts.map

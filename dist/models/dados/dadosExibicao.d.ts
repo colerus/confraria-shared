@@ -16,8 +16,6 @@ export default class DadosExibicao extends Id {
     obterNomeCurto(): string;
     obterNomeComercial(): string | undefined;
     obterFoto(): Foto | undefined;
-    static validar(dados: DadosExibicao | PropsDadosExibicao): boolean;
-    private static isPropsDadosExibicaoValido;
     isValido(): boolean;
 }
 //# sourceMappingURL=dadosExibicao.d.ts.map
