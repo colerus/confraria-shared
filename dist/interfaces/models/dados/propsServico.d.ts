@@ -1,6 +1,6 @@
 import Servico from "../../../models/dados/servico";
-export default interface PropsServico {
-    id?: string;
+import PropsId from "../propsId";
+export default interface PropsServico extends PropsId {
     nome: string;
     derivacoes?: string[];
     parent?: Servico;

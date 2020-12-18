@@ -13,12 +13,8 @@ export default class Busca extends Id {
     pings?: PingBusca[];
     salas?: SalaBusca[];
     constructor(busca: PropsBusca);
-    definirId(id?: string): void;
     adicionarTermo(termo: TermoBusca | propsTermoBusca): void;
     removerTermo(termoBusca: TermoBusca | PropsTermoBusca): void;
-    obterId(): any;
-    obterCliente(): PerfilCliente;
-    obterTermos(): TermoBusca[];
-    obterData(): Date;
+    isValido(): boolean;
 }
 //# sourceMappingURL=busca.d.ts.map

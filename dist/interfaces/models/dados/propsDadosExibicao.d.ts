@@ -1,7 +1,7 @@
 import { PerfilCliente, PerfilPrestador } from "../../../models/dados";
 import Foto from "../../../models/midia/foto";
-export default interface PropsDadosExibicao {
-    id?: string;
+import PropsId from "../propsId";
+export default interface PropsDadosExibicao extends PropsId {
     nomeCurto: string;
     nomeComercial?: string;
     fotoPerfil?: Foto;

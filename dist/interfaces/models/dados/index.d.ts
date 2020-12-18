@@ -10,5 +10,10 @@ import PropsPerfilPrestador from "./propsPerfilPrestador";
 import PropsServico from "./propsServico";
 import PropsServicoPrestado from "./propsServicoPrestado";
 import PropsTelefone from "./propsTelefone";
-export { PropsDadosCadastro, PropsDadosExibicao, PropsDadosLogin, PropsDadosPessoais, PropsEmail, PropsEndereco, PropsPerfil, PropsPerfilCliente, PropsPerfilPrestador, PropsServico, PropsServicoPrestado, PropsTelefone, };
+import PropsBairro from "./propsBairro";
+import PropsCidade from "./propsCidade";
+import PropsEstado from "./propsEstado";
+import PropsLogradouro from "./propsLogradouro";
+import PropsPais from "./propsPais";
+export { PropsBairro, PropsCidade, PropsDadosCadastro, PropsDadosExibicao, PropsDadosLogin, PropsDadosPessoais, PropsEmail, PropsEndereco, PropsEstado, PropsLogradouro, PropsPais, PropsPerfil, PropsPerfilCliente, PropsPerfilPrestador, PropsServico, PropsServicoPrestado, PropsTelefone, };
 //# sourceMappingURL=index.d.ts.map

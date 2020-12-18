@@ -1,13 +1,10 @@
-export default interface PropsEndereco {
-    id?: string;
-    tipoLogradouro: string;
-    logradouro: string;
+import PropsId from "../propsId";
+import Logradouro from "../../../models/dados/logradouro";
+export default interface PropsEndereco extends PropsId {
+    logradouro: Logradouro;
     numero?: number;
     complemento?: string;
     codigoPostal?: string;
-    cidade: string;
-    estado: string;
-    pais: string;
     referencia?: string;
 }
 //# sourceMappingURL=propsEndereco.d.ts.map

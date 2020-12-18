@@ -5,36 +5,22 @@ import propsTermoBusca from "../../interfaces/models/busca/propsTermoBusca";
 import TermoBuscaError from "../../exceptions/termoBuscaError";
 import PropsTermoBusca from "../../interfaces/models/busca/propsTermoBusca";
 import Id from "../id";
-import { Entity, ManyToOne, OneToMany, Column } from "typeorm";
 import { PingBusca } from ".";
 import { SalaBusca } from "../chat";
 
-@Entity("busca")
 export default class Busca extends Id {
-  @ManyToOne((_type) => PerfilCliente, (perfil) => perfil.id)
   cliente: PerfilCliente;
-  @OneToMany(() => TermoBusca, (termo) => termo.busca)
   termos: TermoBusca[];
-  @Column()
   dataInicio: Date;
-  @OneToMany(() => PingBusca, (ping) => ping.busca)
   pings?: PingBusca[];
-  @OneToMany(() => SalaBusca, (sala) => sala.busca)
   salas?: SalaBusca[];
 
   constructor(busca: PropsBusca) {
-    super();
-    this.id = busca.id;
+    super(busca);
     this.cliente = busca.cliente;
     this.termos = busca.termos;
     this.dataInicio = busca.dataInicio || new Date();
     this.salas = busca.salas;
-  }
-
-  definirId(id?: string) {
-    if (this.id === undefined) {
-      this.id = id;
-    }
   }
 
   adicionarTermo(termo: TermoBusca | propsTermoBusca) {
@@ -77,20 +63,11 @@ export default class Busca extends Id {
       this.termos.splice(index, 1);
     }
   }
-
-  obterId() {
-    return this.id;
-  }
-
-  obterCliente() {
-    return this.cliente;
-  }
-
-  obterTermos() {
-    return this.termos;
-  }
-
-  obterData() {
-    return this.dataInicio;
+  isValido(): boolean {
+    return (
+      this.cliente !== undefined &&
+      this.termos.length > 0 &&
+      this.dataInicio.getTime() <= Date.now()
+    );
   }
 }

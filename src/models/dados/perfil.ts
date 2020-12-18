@@ -7,39 +7,23 @@ import PerfilSocial from "./perfilSocial";
 import PropsPerfil from "../../interfaces/models/dados/propsPerfil";
 import PerfilError from "../../exceptions/perfilError";
 import Id from "../id";
-import { Entity, OneToOne, OneToMany, Column, TableInheritance } from "typeorm";
 
-@Entity("perfil")
-@TableInheritance({ column: { name: "tipoPerfil", type: "varchar" } })
 export default class Perfil extends Id {
-  @OneToOne(() => DadosPessoais, (dados) => dados.perfil)
   dadosPessoais: DadosPessoais;
-  @OneToOne(() => DadosExibicao, (dados) => dados.perfil)
   dadosExibicao: DadosExibicao;
-  @OneToMany(() => DadosLogin, (login) => login.perfil)
   dadosLogin: DadosLogin[];
-  @OneToOne(() => DadosCadastro, (dados) => dados.perfil)
   dadosCadastro: DadosCadastro;
-  @OneToMany(() => PerfilSocial, (perfil) => perfil.perfil)
   perfisSociais?: PerfilSocial[];
-  @Column()
   tipoPerfil: TipoPerfil;
 
   constructor(dados: PropsPerfil) {
-    super();
-    this.id = dados.id;
+    super(dados);
     this.dadosPessoais = dados.dadosPessoais;
     this.dadosExibicao = dados.dadosExibicao;
     this.dadosLogin = dados.dadosLogin;
     this.dadosCadastro = dados.dadosCadastro;
     this.perfisSociais = dados.perfisSociais;
     this.tipoPerfil = dados.tipoPerfil;
-  }
-
-  definirId(id: string | undefined) {
-    if (this.id === undefined) {
-      this.id = id;
-    }
   }
 
   adicionarDadosLogin(dadosLogin: DadosLogin) {
@@ -102,12 +86,6 @@ export default class Perfil extends Id {
     return this.tipoPerfil;
   }
 
-  static validar(perfil: Perfil | PropsPerfil): boolean {
-    return perfil instanceof Perfil
-      ? perfil.isValido()
-      : new Perfil(perfil).isValido();
-  }
-
   public isValido(): boolean {
     return (
       this.isTipoPerfilValido() &&
@@ -125,20 +103,18 @@ export default class Perfil extends Id {
     );
   }
   isDadosPessoaisValidos(): boolean {
-    return this.dadosPessoais.isValido();
+    return this.dadosPessoais !== undefined;
   }
   isDadosExibicaoValidos(): boolean {
-    return this.dadosExibicao.isValido();
+    return this.dadosExibicao !== undefined;
   }
   isDadosLoginValidos(): boolean {
-    return this.dadosLogin.every((current) => current.isValido());
+    return this.dadosLogin.length > 0;
   }
   isDadosCadastroValidos(): boolean {
-    return this.dadosCadastro.isValido();
+    return this.dadosCadastro !== undefined;
   }
   isPerfisSociaisValidos(): boolean {
-    return this.perfisSociais
-      ? this.perfisSociais.every((current) => current.isValido())
-      : true;
+    return this.perfisSociais ? false : true;
   }
 }

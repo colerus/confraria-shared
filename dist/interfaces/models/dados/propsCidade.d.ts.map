@@ -1,0 +1,1 @@
+{"version":3,"file":"propsCidade.d.ts","sourceRoot":"","sources":["../../../../src/interfaces/models/dados/propsCidade.ts"],"names":[],"mappings":"AAAA,OAAO,OAAO,MAAM,YAAY,CAAC;AACjC,OAAO,MAAM,MAAM,8BAA8B,CAAC;AAClD,OAAO,MAAM,MAAM,8BAA8B,CAAC;AAClD,MAAM,CAAC,OAAO,WAAW,WAAY,SAAQ,OAAO;IAClD,IAAI,EAAE,MAAM,CAAC;IACb,MAAM,EAAE,MAAM,CAAC;IACf,OAAO,EAAE,MAAM,EAAE,CAAC;CACnB"}

@@ -7,7 +7,6 @@ export default class PerfilPrestador extends Perfil {
     adicionarServicoPrestado(servico: ServicoPrestado): void;
     removerServicoPrestado(servico: ServicoPrestado): void;
     obterServicosPrestados(): ServicoPrestado[];
-    static validar(perfil: PerfilPrestador | PropsPerfilPrestador): boolean;
     isValido(): boolean;
     isServicosValidos(): boolean;
 }

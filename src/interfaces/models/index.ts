@@ -3,5 +3,6 @@ import * as Chat from "./chat/index";
 import * as Dados from "./dados/index";
 import * as Estatisticas from "./estatisticas/index";
 import * as Midia from "./midia/index";
+import PropsId from "./propsId";
 
-export { Busca, Chat, Dados, Estatisticas, Midia };
+export { PropsId, Busca, Chat, Dados, Estatisticas, Midia };

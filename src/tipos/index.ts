@@ -11,6 +11,7 @@ import TipoOrigemMensagem from "./tipoOrigemMensagem";
 import TipoPerfil from "./tipoPerfil";
 import TipoTelefone from "./tipoTelefone";
 import TipoTermoBusca from "./tipoTermoBusca";
+import TipoLogradouro from "./tipoLogradouro";
 
 export {
   StatusMensagem,
@@ -19,6 +20,7 @@ export {
   TipoEndereco,
   TipoFuncaoTelefone,
   TipoLogin,
+  TipoLogradouro,
   TipoMidia,
   TipoOperacaoTermoBusca,
   TipoOrigem,

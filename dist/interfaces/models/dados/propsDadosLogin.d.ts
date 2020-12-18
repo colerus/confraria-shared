@@ -1,6 +1,6 @@
 import { PerfilCliente, PerfilPrestador } from "../../../models/dados";
-export default interface PropsDadosLogin {
-    id?: string;
+import PropsId from "../propsId";
+export default interface PropsDadosLogin extends PropsId {
     usuario: string;
     senha: string;
     perfil: PerfilCliente | PerfilPrestador;

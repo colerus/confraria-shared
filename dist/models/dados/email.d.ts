@@ -11,7 +11,6 @@ export default class Email extends Id {
     obterId(): any;
     obterEmail(): string;
     obterTipoEmail(): TipoEmail;
-    static validar(email: string | Email): boolean;
     isValido(): boolean;
 }
 //# sourceMappingURL=email.d.ts.map

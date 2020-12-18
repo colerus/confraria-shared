@@ -16,5 +16,6 @@ export default class DadosEstatisticos extends Id implements IDadosEstatisticos 
     obterOrigem(): string | undefined;
     obterTipoOrigem(): TipoOrigem | undefined;
     obterTipoDadoEstatistico(): TipoDadoEstatistico;
+    isValido(): boolean;
 }
 //# sourceMappingURL=dadosEstatisticos.d.ts.map

@@ -4,25 +4,17 @@ import Generator from "generate-password";
 import { BCRYPT_SALT } from "../../config";
 import Id from "../id";
 import { encriptar } from "../../utils/crypto";
-import { Entity, Column, OneToMany } from "typeorm";
 import { Perfil } from ".";
 
-@Entity("dados_login")
 export default class DadosLogin extends Id {
-  @Column()
   tipoLogin: TipoLogin;
-  @Column()
   usuario: string;
-  @Column()
   senha: string;
-  @Column()
   senhaCriptografada: boolean;
-  @OneToMany(() => Perfil, (perfil) => perfil.dadosLogin)
   perfil: Perfil;
 
   constructor(dados: PropsDadosLogin, tipoLogin: TipoLogin) {
-    super();
-    this.id = dados.id;
+    super(dados);
     this.tipoLogin = tipoLogin;
     this.usuario = dados.usuario;
     this.senha = dados.senha;
@@ -80,31 +72,12 @@ export default class DadosLogin extends Id {
         }).then(() => this.senha);
   }
 
-  static validar(
-    dados: DadosLogin | PropsDadosLogin,
-    tipoLogin: TipoLogin
-  ): boolean {
-    return dados instanceof DadosLogin
-      ? this.validarDadosLogin(dados)
-      : this.validarPropsDadosLogin(dados, tipoLogin);
-  }
-
-  private static validarDadosLogin(dados: DadosLogin): boolean {
-    return (
-      dados.tipoLoginValido() && dados.usuarioValido() && dados.senhaValida()
-    );
-  }
-
-  private static validarPropsDadosLogin(
-    dados: PropsDadosLogin,
-    tipo: TipoLogin
-  ): boolean {
-    const tempLogin = new DadosLogin(dados, tipo);
-    return tempLogin.isValido();
-  }
-
   isValido(): boolean {
-    return DadosLogin.validar(this, this.tipoLogin);
+    return (
+      this.tipoLoginValido() &&
+      this.usuarioValido() &&
+      (this.senhaValida() || this.senhaFoiCriptografada())
+    );
   }
 
   private tipoLoginValido(): boolean {

@@ -9,7 +9,6 @@ export default class DadosCadastro extends Id {
     codigoConfirmacao?: string;
     perfil: Perfil;
     constructor(dados: PropsDadosCadastro);
-    definirId(id: string | undefined): void;
     definirDataConfirmacao(data: Date | undefined): void;
     definirDataEnvioLinkConfirmacao(data: Date | undefined): void;
     obterId(): any;
@@ -19,7 +18,6 @@ export default class DadosCadastro extends Id {
     obterCodigoConfirmacao(): string | undefined;
     obterDataGeracaoCodigoConfirmacao(): Date | undefined;
     gerarNovoCodigoConfirmacao(): void;
-    static validar(dados: DadosCadastro | PropsDadosCadastro): boolean;
     isValido(): boolean;
 }
 //# sourceMappingURL=dadosCadastro.d.ts.map

@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.TipoTermoBusca = exports.TipoTelefone = exports.TipoPerfil = exports.TipoOrigemMensagem = exports.TipoOrigem = exports.TipoOperacaoTermoBusca = exports.TipoMidia = exports.TipoLogin = exports.TipoFuncaoTelefone = exports.TipoEndereco = exports.TipoEmail = exports.TipoDadoEstatistico = exports.StatusMensagem = void 0;
+exports.TipoTermoBusca = exports.TipoTelefone = exports.TipoPerfil = exports.TipoOrigemMensagem = exports.TipoOrigem = exports.TipoOperacaoTermoBusca = exports.TipoMidia = exports.TipoLogradouro = exports.TipoLogin = exports.TipoFuncaoTelefone = exports.TipoEndereco = exports.TipoEmail = exports.TipoDadoEstatistico = exports.StatusMensagem = void 0;
 const tslib_1 = require("tslib");
 const statusMensagem_1 = tslib_1.__importDefault(require("./statusMensagem"));
 exports.StatusMensagem = statusMensagem_1.default;
@@ -28,4 +28,6 @@ const tipoTelefone_1 = tslib_1.__importDefault(require("./tipoTelefone"));
 exports.TipoTelefone = tipoTelefone_1.default;
 const tipoTermoBusca_1 = tslib_1.__importDefault(require("./tipoTermoBusca"));
 exports.TipoTermoBusca = tipoTermoBusca_1.default;
+const tipoLogradouro_1 = tslib_1.__importDefault(require("./tipoLogradouro"));
+exports.TipoLogradouro = tipoLogradouro_1.default;
 //# sourceMappingURL=index.js.map

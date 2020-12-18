@@ -2,13 +2,9 @@ import DadosEstatisticos from "./dadosEstatisticos";
 import PropsDadosEstatisticos from "../../interfaces/models/estatisticas/propsDadosEstatisticos";
 import TipoDadoEstatistico from "../../tipos/tipoDadoEstatistico";
 import PropsDadosEstatisticosClique from "../../interfaces/models/estatisticas/propsDadosEstatisticosClique";
-import { Column, ChildEntity } from "typeorm";
 
-@ChildEntity(TipoDadoEstatistico.CLIQUE)
 export default class Clique extends DadosEstatisticos {
-  @Column()
   x?: number;
-  @Column()
   y?: number;
 
   constructor(dados: PropsDadosEstatisticos | PropsDadosEstatisticosClique) {
@@ -27,5 +23,14 @@ export default class Clique extends DadosEstatisticos {
 
   obterY(): number | undefined {
     return this.y;
+  }
+  isValido() {
+    return (
+      super.isValido() &&
+      this.x !== undefined &&
+      this.x >= 0 &&
+      this.y !== undefined &&
+      this.y >= 0
+    );
   }
 }

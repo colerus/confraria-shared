@@ -1,34 +1,20 @@
-import { Column, TableInheritance } from "typeorm";
-import { Entity } from "typeorm";
 import PropsMidia from "../../interfaces/models/midia/propsMidia";
 import TipoMidia from "../../tipos/tipoMidia";
 import Id from "../id";
 
-@Entity("midia")
-@TableInheritance({ column: { name: "tipoMidia", type: "varchar" } })
 export default class Midia extends Id {
-  @Column()
   path: string;
-  @Column()
   nomeOriginal: string;
-  @Column()
   data: Date;
-  @Column()
   titulo: string;
-  @Column()
   descricao: string;
-  @Column()
   ativo: boolean;
-  @Column()
   tipoMidia: TipoMidia;
-  @Column()
   width?: number;
-  @Column()
   height?: number;
 
   constructor(props: PropsMidia, tipoMidia: TipoMidia) {
-    super();
-    this.id = props.id;
+    super(props);
     this.path = props.path;
     this.data = new Date();
     this.nomeOriginal = "";
@@ -110,5 +96,18 @@ export default class Midia extends Id {
 
   obterTipoMidia() {
     return this.tipoMidia;
+  }
+  isValido() {
+    return (
+      this.path.trim().length > 8 &&
+      this.data.getTime() <= Date.now() &&
+      this.nomeOriginal.length >= 5 &&
+      this.width !== undefined &&
+      this.width > 0 &&
+      this.height !== undefined &&
+      this.height > 0 &&
+      this.tipoMidia !== undefined &&
+      this.tipoMidia !== TipoMidia.INDEFINIDO
+    );
   }
 }

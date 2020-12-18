@@ -3,17 +3,13 @@ import EmailValidator from "email-validator";
 import EmailError from "../../exceptions/emailError";
 import Id from "../id";
 import TipoEmail from "../../tipos/tipoEmail";
-import { Entity, Column } from "typeorm";
 
-@Entity("email")
 export default class Email extends Id {
-  @Column()
   email: string;
-  @Column()
   tipoEmail: TipoEmail;
 
   constructor(dados: PropsEmail) {
-    super();
+    super(dados);
     this.email = dados.email;
     this.tipoEmail = dados.tipoEmail || TipoEmail.INDEFINIDO;
   }
@@ -25,7 +21,7 @@ export default class Email extends Id {
   }
 
   alterarEmail(email: string) {
-    if (!Email.validar(email)) {
+    if (!EmailValidator.validate(this.obterEmail())) {
       throw new EmailError("Endereço de e-mail inválido");
     }
     this.email = email;
@@ -47,14 +43,7 @@ export default class Email extends Id {
     return this.tipoEmail;
   }
 
-  static validar(email: string | Email): boolean {
-    if (email instanceof Email) {
-      return EmailValidator.validate(email.obterEmail());
-    }
-    return EmailValidator.validate(email);
-  }
-
   isValido(): boolean {
-    return Email.validar(this);
+    return EmailValidator.validate(this.obterEmail());
   }
 }

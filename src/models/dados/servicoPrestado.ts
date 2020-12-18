@@ -1,23 +1,16 @@
 import Servico from "./servico";
 import PropsServicoPrestado from "../../interfaces/models/dados/propsServicoPrestado";
 import Id from "../id";
-import { Column, Entity, ManyToMany, ManyToOne } from "typeorm";
 import { PerfilPrestador } from ".";
 
-@Entity("servico_prestado")
 export default class ServicoPrestado extends Id {
-  @ManyToOne(() => Servico)
   servico: Servico;
-  @Column()
   faixaPrecoInicial: number;
-  @Column()
   faixaPrecoFinal: number;
-  @ManyToMany(() => PerfilPrestador, (perfil) => perfil.servicos)
   perfis: PerfilPrestador[];
 
   constructor(servico: PropsServicoPrestado) {
-    super();
-    this.id = servico.id;
+    super(servico);
     this.servico = servico.servico;
     this.faixaPrecoInicial = servico.faixaPrecoInicial;
     this.faixaPrecoFinal = servico.faixaPrecoFinal;
@@ -52,12 +45,6 @@ export default class ServicoPrestado extends Id {
 
   obterFaixaPrecoFinal() {
     return this.faixaPrecoFinal;
-  }
-
-  static validar(servico: ServicoPrestado | PropsServicoPrestado): boolean {
-    return servico instanceof ServicoPrestado
-      ? servico.isValido()
-      : new ServicoPrestado(servico).isValido();
   }
 
   isValido(): boolean {

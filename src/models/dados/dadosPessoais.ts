@@ -2,7 +2,6 @@ import Endereco from "./endereco";
 import Telefone from "./telefone";
 import Email from "./email";
 import PropsDadosPessoais from "../../interfaces/models/dados/propsDadosPessoais";
-import propsDadosPessoais from "../../interfaces/models/dados/propsDadosPessoais";
 import PropsTelefone from "../../interfaces/models/dados/propsTelefone";
 import TelefoneError from "../../exceptions/telefoneError";
 import PhoneNumber from "awesome-phonenumber";
@@ -10,29 +9,19 @@ import { calcularIdade } from "../../utils/data";
 import DadosPessoaisError from "../../exceptions/dadosPessoaisError";
 import { converterParaTelefone } from "../../utils/telefone";
 import Id from "../id";
-import { Column, Entity, ManyToMany, OneToOne } from "typeorm";
 import Perfil from "./perfil";
 
-@Entity("dados_pessoais")
 export default class DadosPessoais extends Id {
-  @Column()
   nome: string;
-  @Column()
   sobrenome: string;
-  @Column()
   dataNascimento: Date;
-  @ManyToMany(() => Endereco)
   enderecos: Endereco[];
-  @ManyToMany(() => Telefone)
   telefones: Telefone[];
-  @ManyToMany(() => Email)
   emails?: Email[];
-  @OneToOne(() => Perfil, (perfil) => perfil.dadosPessoais)
   perfil: Perfil;
 
   constructor(dados: PropsDadosPessoais) {
-    super();
-    this.id = dados.id;
+    super(dados);
     this.nome = dados.nome;
     this.sobrenome = dados.sobrenome;
     this.dataNascimento = dados.dataNascimento;
@@ -122,12 +111,6 @@ export default class DadosPessoais extends Id {
 
   obterEmails() {
     return this.emails;
-  }
-
-  static validar(dadosPessoais: DadosPessoais | propsDadosPessoais): boolean {
-    return dadosPessoais instanceof DadosPessoais
-      ? dadosPessoais.isValido()
-      : new DadosPessoais(dadosPessoais).isValido();
   }
 
   isValido() {

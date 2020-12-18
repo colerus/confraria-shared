@@ -1,8 +1,13 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-const tslib_1 = require("tslib");
-const typeorm_1 = require("typeorm");
 class Id {
+    constructor(props) {
+        this.definirId(props.id);
+        this.createdAt = props.createdAt;
+        this.updatedAt = props.updatedAt;
+        this.deletedAt = props.deletedAt;
+        this.version = props.version;
+    }
     definirId(id) {
         if (!this.id)
             this.id = id;
@@ -10,10 +15,9 @@ class Id {
     obterId() {
         return this.id;
     }
+    static Validar(obj) {
+        return obj.isValido();
+    }
 }
-tslib_1.__decorate([
-    typeorm_1.PrimaryColumn(),
-    tslib_1.__metadata("design:type", Object)
-], Id.prototype, "id", void 0);
 exports.default = Id;
 //# sourceMappingURL=id.js.map

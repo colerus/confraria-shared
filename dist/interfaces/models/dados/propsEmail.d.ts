@@ -1,6 +1,6 @@
 import TipoEmail from "../../../tipos/tipoEmail";
-export default interface PropsEmail {
-    id?: string;
+import PropsId from "../propsId";
+export default interface PropsEmail extends PropsId {
     email: string;
     tipoEmail: TipoEmail;
 }

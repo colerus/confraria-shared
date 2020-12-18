@@ -1,22 +1,15 @@
 import PropsServico from "../../interfaces/models/dados/propsServico";
 import ServicoError from "../../exceptions/servicoError";
 import Id from "../id";
-import { Column, Entity, ManyToOne, OneToMany } from "typeorm";
 
-@Entity("servico")
 export default class Servico extends Id {
-  @Column()
   nome: string;
-  @Column()
   derivacoes?: string[];
-  @ManyToOne(() => Servico, (servico) => servico.childs)
   parent?: Servico;
-  @OneToMany(() => Servico, (servico) => servico.parent)
   childs?: Servico[];
 
   constructor(servico: PropsServico) {
-    super();
-    this.id = servico.id;
+    super(servico);
     this.nome = servico.nome;
     this.derivacoes = servico.derivacoes;
     this.parent = servico.parent;
@@ -62,12 +55,6 @@ export default class Servico extends Id {
     return this.parent;
   }
 
-  static validar(servico: Servico | PropsServico) {
-    return servico instanceof Servico
-      ? servico.isValido()
-      : new Servico(servico).isValido();
-  }
-
   isValido(): boolean {
     return (
       this.isNomeValido() && this.isDerivacoesValidas() && this.isParentValido()
@@ -82,6 +69,6 @@ export default class Servico extends Id {
       : true;
   }
   isParentValido(): boolean {
-    return this.parent ? this.parent.isValido() : true;
+    return this.parent ? true : false;
   }
 }

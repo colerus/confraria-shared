@@ -1,6 +1,6 @@
 import { PerfilCliente, PerfilPrestador } from "../../../models/dados";
-export default interface PropsDadosCadastro {
-    id?: string;
+import PropsId from "../propsId";
+export default interface PropsDadosCadastro extends PropsId {
     dataCadastro?: Date;
     dataConfirmacao?: Date;
     dataEnvioLinkConfirmacao?: Date;

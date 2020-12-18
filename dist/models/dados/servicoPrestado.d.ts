@@ -15,7 +15,6 @@ export default class ServicoPrestado extends Id {
     obterServico(): Servico;
     obterFaixaPrecoInicial(): number;
     obterFaixaPrecoFinal(): number;
-    static validar(servico: ServicoPrestado | PropsServicoPrestado): boolean;
     isValido(): boolean;
     isServicoValido(): boolean;
     isPrecoInicialValido(): boolean;

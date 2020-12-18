@@ -1,45 +1,21 @@
 import PropsEndereco from "../../interfaces/models/dados/propsEndereco";
-import TipoEndereco from "../../tipos/tipoEndereco";
-import propsEndereco from "../../interfaces/models/dados/propsEndereco";
 import Id from "../id";
-import { Column, Entity } from "typeorm";
+import Logradouro from "./logradouro";
 
-@Entity("endereco")
 export default class Endereco extends Id {
-  @Column()
-  tipoLogradouro: string;
-  @Column()
-  logradouro: string;
-  @Column()
+  logradouro: Logradouro;
   numero?: number;
-  @Column()
   complemento?: string;
-  @Column()
   codigoPostal?: string;
-  @Column()
-  cidade: string;
-  @Column()
-  estado: string;
-  @Column()
-  pais: string;
-  @Column()
   referencia?: string;
-  @Column()
-  tipoEndereco: TipoEndereco;
 
-  constructor(dados: PropsEndereco, tipoEndereco: TipoEndereco) {
-    super();
-    this.id = dados.id;
-    this.tipoLogradouro = dados.tipoLogradouro;
+  constructor(dados: PropsEndereco) {
+    super(dados);
     this.logradouro = dados.logradouro;
     this.numero = dados.numero;
     this.complemento = dados.complemento;
     this.codigoPostal = dados.codigoPostal;
-    this.cidade = dados.cidade;
-    this.estado = dados.estado;
-    this.pais = dados.pais;
     this.referencia = dados.referencia;
-    this.tipoEndereco = tipoEndereco;
   }
 
   alterarId(id?: string) {
@@ -47,114 +23,30 @@ export default class Endereco extends Id {
       this.id = id;
     }
   }
-
-  alterarTipoLogradouro(tipoLogradouro: string) {
-    this.tipoLogradouro = tipoLogradouro;
-  }
-
-  alterarLogradouro(logradouro: string) {
-    this.logradouro = logradouro;
-  }
-
-  alterarNumero(numero?: number) {
-    this.numero = numero;
-  }
-
-  alterarComplemento(complemento?: string) {
-    this.complemento = complemento;
-  }
-
-  alterarCodigoPostal(codigoPostal: string) {
-    this.codigoPostal = codigoPostal;
-  }
-
-  alterarCidade(cidade: string) {
-    this.cidade = cidade;
-  }
-
-  alterarEstado(estado: string) {
-    this.estado = estado;
-  }
-
-  alterarPais(pais: string) {
-    this.pais = pais;
-  }
-
-  alterarReferencia(referencia?: string) {
-    this.referencia = referencia;
-  }
-
-  alterarTipoEndereco(tipoEndereco: TipoEndereco) {
-    this.tipoEndereco = tipoEndereco;
-  }
-
-  obterId() {
-    return this.id;
-  }
-
-  obterTipoLogradouro() {
-    return this.tipoLogradouro;
-  }
-
-  obterLogradouro() {
-    return this.logradouro;
-  }
-
-  obterNumero() {
-    return this.numero;
-  }
-
-  obterComplemento() {
-    return this.complemento;
-  }
-
-  obterCodigoPostal() {
-    return this.codigoPostal;
-  }
-
-  obterCidade() {
-    return this.cidade;
-  }
-
-  obterEstado() {
-    return this.estado;
-  }
-
-  obterPais() {
-    return this.pais;
-  }
-
-  obterReferencia() {
-    return this.referencia;
-  }
-
-  obterTipoEndereco() {
-    return this.tipoEndereco;
-  }
-
-  static validar(endereco: Endereco | propsEndereco): boolean {
-    return endereco instanceof Endereco
-      ? endereco.isValido()
-      : new Endereco(endereco, TipoEndereco.INDEFINIDO).isValido();
-  }
   isValido(): boolean {
     return (
-      this.isLogradouroValido() &&
-      this.isCidadeValida() &&
-      this.isEstadoValido() &&
-      this.isPaisValido()
+      this.logradouro !== undefined &&
+      this.isCodigoPostalValido() &&
+      (this.isNumeroValido() ||
+        this.isComplementoValido() ||
+        this.isReferenciaValido())
     );
   }
-  isLogradouroValido(): boolean {
-    return this.logradouro.length > 0;
+
+  private isNumeroValido() {
+    return this.numero !== undefined && this.numero > 0;
   }
-  isCidadeValida(): boolean {
-    return this.cidade.length > 3;
+
+  private isComplementoValido() {
+    return this.complemento !== undefined && this.complemento.trim().length > 0;
   }
-  isEstadoValido(): boolean {
-    return this.estado.length >= 2;
+  private isCodigoPostalValido() {
+    return (
+      this.codigoPostal !== undefined && this.codigoPostal.trim().length > 5
+    );
   }
-  isPaisValido(): boolean {
-    return this.pais.length >= 2;
+
+  private isReferenciaValido() {
+    return this.referencia !== undefined && this.referencia.trim().length > 3;
   }
 }

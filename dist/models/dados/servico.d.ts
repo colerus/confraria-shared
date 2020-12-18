@@ -13,7 +13,6 @@ export default class Servico extends Id {
     obterNome(): string;
     obterDerivacoes(): string[] | undefined;
     obterParent(): Servico | undefined;
-    static validar(servico: Servico | PropsServico): boolean;
     isValido(): boolean;
     isNomeValido(): boolean;
     isDerivacoesValidas(): boolean;

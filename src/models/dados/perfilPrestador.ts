@@ -2,11 +2,8 @@ import Perfil from "./perfil";
 import ServicoPrestado from "./servicoPrestado";
 import PropsPerfilPrestador from "../../interfaces/models/dados/propsPerfilPrestador";
 import TipoPerfil from "../../tipos/tipoPerfil";
-import { ChildEntity, ManyToMany } from "typeorm";
 
-@ChildEntity(TipoPerfil.USUARIO)
 export default class PerfilPrestador extends Perfil {
-  @ManyToMany(() => ServicoPrestado, (servico) => servico.perfis)
   servicos: ServicoPrestado[];
 
   constructor(perfil: PropsPerfilPrestador) {
@@ -29,16 +26,10 @@ export default class PerfilPrestador extends Perfil {
     return this.servicos;
   }
 
-  static validar(perfil: PerfilPrestador | PropsPerfilPrestador): boolean {
-    return perfil instanceof PerfilPrestador
-      ? perfil.isValido()
-      : new PerfilPrestador(perfil).isValido();
-  }
-
   isValido(): boolean {
     return super.isValido() && this.isServicosValidos();
   }
   isServicosValidos(): boolean {
-    return this.servicos.every((current) => current.isValido()) || false;
+    return this.servicos && this.servicos.length > 0 ? true : false;
   }
 }

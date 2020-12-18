@@ -1,1 +1,1 @@
-{"version":3,"file":"referencia.d.ts","sourceRoot":"","sources":["../../../src/models/estatisticas/referencia.ts"],"names":[],"mappings":"AAAA,OAAO,iBAAiB,MAAM,qBAAqB,CAAC;AACpD,OAAO,sBAAsB,MAAM,6DAA6D,CAAC;AAKjG,MAAM,CAAC,OAAO,OAAO,UAAW,SAAQ,iBAAiB;gBAC3C,iBAAiB,EAAE,sBAAsB;CAGtD"}
+{"version":3,"file":"referencia.d.ts","sourceRoot":"","sources":["../../../src/models/estatisticas/referencia.ts"],"names":[],"mappings":"AAAA,OAAO,iBAAiB,MAAM,qBAAqB,CAAC;AACpD,OAAO,sBAAsB,MAAM,6DAA6D,CAAC;AAGjG,MAAM,CAAC,OAAO,OAAO,UAAW,SAAQ,iBAAiB;gBAC3C,iBAAiB,EAAE,sBAAsB;IAGrD,QAAQ;CAGT"}

@@ -1,7 +1,7 @@
 import TipoTelefone from "../../../tipos/tipoTelefone";
 import TipoFuncaoTelefone from "../../../tipos/tipoFuncaoTelefone";
-export default interface PropsTelefone {
-    id?: string;
+import PropsId from "../propsId";
+export default interface PropsTelefone extends PropsId {
     codigoPais: number;
     codigoArea?: number;
     numero: string;

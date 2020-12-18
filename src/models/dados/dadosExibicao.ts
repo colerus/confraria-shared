@@ -1,23 +1,16 @@
 import Foto from "../midia/foto";
 import PropsDadosExibicao from "../../interfaces/models/dados/propsDadosExibicao";
 import Id from "../id";
-import { Column, Entity, OneToOne } from "typeorm";
 import Perfil from "./perfil";
 
-@Entity("dados_exibicao")
 export default class DadosExibicao extends Id {
-  @Column()
   nomeCurto: string;
-  @Column()
   nomeComercial?: string;
-  @OneToOne(() => Foto)
   fotoPerfil?: Foto;
-  @OneToOne(() => Perfil, (perfil) => perfil.dadosPessoais)
   perfil: Perfil;
 
   constructor(dados: PropsDadosExibicao) {
-    super();
-    this.id = dados.id;
+    super(dados);
     this.nomeCurto = dados.nomeCurto;
     this.nomeComercial = dados.nomeComercial;
     this.fotoPerfil = dados.fotoPerfil;
@@ -58,20 +51,7 @@ export default class DadosExibicao extends Id {
     return this.fotoPerfil;
   }
 
-  static validar(dados: DadosExibicao | PropsDadosExibicao): boolean {
-    return dados instanceof DadosExibicao
-      ? dados.obterNomeCurto().length >= 5
-      : DadosExibicao.isPropsDadosExibicaoValido(dados);
-  }
-
-  private static isPropsDadosExibicaoValido(
-    props: PropsDadosExibicao
-  ): boolean {
-    const temp = new DadosExibicao(props);
-    return temp.isValido();
-  }
-
   isValido(): boolean {
-    return DadosExibicao.validar(this);
+    return this.nomeCurto.trim.length > 1 && this.perfil !== undefined;
   }
 }

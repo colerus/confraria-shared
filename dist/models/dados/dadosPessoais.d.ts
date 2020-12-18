@@ -2,7 +2,6 @@ import Endereco from "./endereco";
 import Telefone from "./telefone";
 import Email from "./email";
 import PropsDadosPessoais from "../../interfaces/models/dados/propsDadosPessoais";
-import propsDadosPessoais from "../../interfaces/models/dados/propsDadosPessoais";
 import PropsTelefone from "../../interfaces/models/dados/propsTelefone";
 import PhoneNumber from "awesome-phonenumber";
 import Id from "../id";
@@ -31,7 +30,6 @@ export default class DadosPessoais extends Id {
     obterEnderecos(): Endereco[];
     obterTelefones(): Telefone[];
     obterEmails(): Email[] | undefined;
-    static validar(dadosPessoais: DadosPessoais | propsDadosPessoais): boolean;
     isValido(): boolean;
     isNomeValido(): boolean;
     isSobrenomeValido(): boolean;

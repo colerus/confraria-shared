@@ -14,7 +14,6 @@ export default class Perfil extends Id {
     perfisSociais?: PerfilSocial[];
     tipoPerfil: TipoPerfil;
     constructor(dados: PropsPerfil);
-    definirId(id: string | undefined): void;
     adicionarDadosLogin(dadosLogin: DadosLogin): void;
     adicionarPerfilSocial(perfil: PerfilSocial): void;
     removerDadosLogin(dadosLogin: DadosLogin): void;
@@ -26,7 +25,6 @@ export default class Perfil extends Id {
     obterDadosCadastro(): DadosCadastro;
     obterPerfisSociais(): PerfilSocial[] | undefined;
     obterTipoPerfil(): TipoPerfil;
-    static validar(perfil: Perfil | PropsPerfil): boolean;
     isValido(): boolean;
     isTipoPerfilValido(): boolean;
     isDadosPessoaisValidos(): boolean;
